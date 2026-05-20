@@ -1,0 +1,28 @@
+{
+  "site_name": "Corgi Hub",
+  "site_url": "https://pembroke-welsh-corgi-hub.github.io",
+  "niche": "Pembroke Welsh Corgis",
+  "brand_voice": "Playful, knowing, slightly quirky — corgi people understand, and so do we",
+  "editorial_voice": "Witty but practical — we don't take ourselves too seriously, but we do take corgi care seriously",
+  "primary_author_label": "Corgi Hub Writing Desk",
+  "reviewer_label": "Corgi Hub Editorial Check",
+  "update_owner_label": "Corgi Hub Writing Desk",
+  "about_title": "The Corgi People Behind This Site",
+  "editorial_policy_title": "Our Review Process",
+  "disclosure_title": "A Note on How We Keep the Lights On",
+  "ai_assistance_disclosure": "Corgi Hub uses AI writing assistance at the research and drafting stage. All content is reviewed and polished by our writing desk before publication.",
+  "article_eeat_block_variants": [
+    "<div style=\"border-left:4px solid #3f6212;background:#f7fee7;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#3f6212;\">Corgi Hub Writing Desk</strong> — Reviewed before publishing. If it's here, we think it's actually useful for corgi people.</p></div>",
+    "<div style=\"border-left:4px solid #3f6212;background:#f7fee7;padding:14px 18px;margin:24px 0;border-radius:0 6px 6px 0;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#3f6212;\">Written for Corgi Owners:</strong> Corgi Hub covers what matters to people who actually live with Pembroke Welsh Corgis — the herding instincts, the ears, the zoomy energy.</p></div>",
+    "<div style=\"border:1px solid #bef264;background:#fbffe9;padding:14px 18px;margin:24px 0;border-radius:6px;\"><p style=\"margin:0;font-size:0.93rem;color:#4b5563;\"><strong style=\"color:#3f6212;\">Corgi-Specific Content:</strong> This guide is written for the Pembroke specifically — not just a generic small-dog article with a different breed name dropped in.</p></div>",
+    "<div style=\"background:#3f6212;color:#fff;padding:14px 18px;margin:24px 0;border-radius:6px;\"><p style=\"margin:0;font-size:0.93rem;\"><strong>Hub Note:</strong> Corgi Hub keeps guides updated as things change. If something looks off, <a href=\"/contact.html\" style=\"color:#cfe;\">send us a note</a>.</p></div>",
+    "<div style=\"border-top:2px solid #3f6212;padding-top:12px;margin:24px 0;\"><p style=\"font-size:0.88rem;color:#6b7280;margin:0;\">Published by <strong style=\"color:#3f6212;\">Corgi Hub Writing Desk</strong>. We specialize in Pembroke Welsh Corgi behavior, exercise needs, herding instincts, and ear development.</p></div>"
+  ],
+  "disclosure_variants": [
+    "Corgi Hub uses Amazon affiliate links. We earn a commission if you buy through them — it costs you the same either way.",
+    "Some product links on this site are affiliate links. We get a small cut if you purchase, at no extra cost to you.",
+    "This site earns affiliate income through product recommendations. We keep editorial decisions separate from revenue.",
+    "Corgi Hub participates in the Amazon affiliate program. Commissions help cover hosting and writing costs.",
+    "When you click a product link and purchase, Corgi Hub may earn a referral commission. Our content decisions remain independent of these earnings."
+  ]
+}
