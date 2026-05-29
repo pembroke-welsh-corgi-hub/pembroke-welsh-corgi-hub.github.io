@@ -3,74 +3,82 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<style>
-@media (max-width:700px){
-  .layout-row{flex-direction:column!important;}
-  .layout-row aside{display:none!important;}
-  header nav{gap:8px!important;font-size:0.82rem!important;}
-  header div{flex-wrap:wrap!important;}
-}
-
-  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
-  .article-breadcrumb a { color: #6b7280; }
-  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
-
-</style>
 <title>A Note on How We Keep the Lights On — Corgi Hub</title>
 <meta name="description" content="Corgi Hub's funding disclosure: how affiliate links work, what income is generated, and what it means for editorial independence.">
 <meta name="robots" content="index, follow">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Garamond', 'Baskerville', serif; background: #f6f6f7; color: #1f2937; line-height: 1.75; }
+  a { color: #3f6212; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .topbar { background: #3f6212; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.14); position: sticky; top: 0; z-index: 100; }
+  .topbar-inner { max-width: 1040px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 16px; align-items: center; }
+  .brand { color: #fff; font-size: 1.08rem; font-weight: 700; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; }
+  @media(max-width:600px) { .nav { display: none; } }
+  .breadcrumb { background: #fff; border-bottom: 1px solid #e5e7eb; }
+  .breadcrumb-inner { max-width: 1040px; margin: 0 auto; padding: 10px 22px; color: #6b7280; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .breadcrumb-inner a { color: #3f6212; }
+  .wrap { max-width: 1040px; margin: 28px auto; padding: 0 22px 40px; }
+  .panel { background: #fff; border-radius: 10px; padding: 32px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  h1 { color: #324e0e; font-size: 2rem; margin-bottom: 10px; }
+  h2 { color: #324e0e; font-size: 1.3rem; margin: 28px 0 10px; }
+  p { color: #4b5563; margin-bottom: 14px; }
+  .footer { background: #324e0e; color: rgba(255,255,255,0.75); margin-top: 32px; }
+  .footer-inner { max-width: 1040px; margin: 0 auto; padding: 18px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .footer-inner a { color: rgba(255,255,255,0.9); }
+</style>
 </head>
-<body style="font-family:'Garamond','Baskerville',serif;background:#f6f6f7;color:#1f2937;line-height:1.75;margin:0;padding:0;">
-<header style="background:#3f6212;color:#fff;box-shadow:0 2px 8px rgba(0,0,0,0.14);">
-  <div style="max-width:1040px;margin:0 auto;padding:14px 22px;display:flex;justify-content:space-between;gap:16px;align-items:center;">
-    <a href="/" style="color:#fff;font-size:1.08rem;font-weight:700;text-decoration:none;">Corgi Hub</a>
-    <nav style="display:flex;gap:14px;flex-wrap:wrap;">
-      <a href="/" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Home</a>
-      <a href="/blog.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Blog</a>
-      <a href="/care.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Care</a>
-      <a href="/about.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">About</a>
-      <a href="/contact.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Contact</a>
-      <a href="/sitemap.html" style="color:rgba(255,255,255,0.92);font-size:0.92rem;text-decoration:none;">Sitemap</a>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="/">Pembroke Welsh Corgi Guide</a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/care.html">Care</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/sitemap.html">Sitemap</a>
     </nav>
   </div>
 </header>
-<nav aria-label="Breadcrumb" style="background:#fff;border-bottom:1px solid #e5e7eb;">
-  <div style="max-width:1040px;margin:0 auto;padding:10px 22px;color:#6b7280;font-size:0.88rem;display:flex;flex-wrap:wrap;gap:8px;align-items:center;">
-    <a href="/" style="color:#6b7280;text-decoration:none;">Home</a>
-    <span>&#8250;</span>
-    <span style="color:#374151;font-weight:600;" aria-current="page">How We Keep the Lights On</span>
+<div class="breadcrumb">
+  <div class="breadcrumb-inner">
+    <a href="/">Home</a><span>›</span><span aria-current="page">How We Keep the Lights On</span>
   </div>
-</nav>
-<div style="max-width:1040px;margin:28px auto;padding:0 22px 40px;">
-  <article style="background:#fff;border-radius:10px;padding:32px;box-shadow:0 1px 6px rgba(0,0,0,0.08);">
-    <h1 style="color:#314c0e;font-size:2rem;margin:0 0 10px;">A Note on How We Keep the Lights On</h1>
-    <p style="font-size:1.05rem;color:#4b5563;margin:0 0 18px;">Corgi Hub uses Amazon affiliate links. That is how this site is funded. Here is what that means in plain terms, because you deserve to know.</p>
+</div>
+<div class="wrap">
+  <section class="panel">
+    <h1>A Note on How We Keep the Lights On</h1>
+    <p style="font-size:1.05rem;">Corgi Hub uses Amazon affiliate links. That is how this site is funded. Here is what that means in plain terms, because you deserve to know.</p>
 
-    <h2 style="color:#314c0e;font-size:1.3rem;margin:28px 0 10px;">The Honest Explanation</h2>
-    <p style="color:#4b5563;">When you click a product link in one of our guides and buy something from Amazon, Corgi Hub earns a small commission. Amazon pays it — not you. Your price is identical to what you'd pay walking straight to Amazon.com. The commission is Amazon's cost of doing business with referring sites like this one.</p>
-    <p style="color:#4b5563;">That income covers hosting, the time that goes into writing and reviewing guides, and whatever it costs to keep this thing running. It's a standard arrangement for content sites. We're disclosing it because we think you should know.</p>
+    <h2>The Honest Explanation</h2>
+    <p>When you click a product link in one of our guides and buy something from Amazon, Corgi Hub earns a small commission. Amazon pays it — not you. Your price is identical to what you'd pay walking straight to Amazon.com. The commission is Amazon's cost of doing business with referring sites like this one.</p>
+    <p>That income covers hosting, the time that goes into writing and reviewing guides, and whatever it costs to keep this thing running. It's a standard arrangement for content sites. We're disclosing it because we think you should know.</p>
 
-    <h2 style="color:#314c0e;font-size:1.3rem;margin:28px 0 10px;">What It Does Not Change</h2>
-    <p style="color:#4b5563;">Our writing decisions. When the Corgi Hub Writing Desk writes a guide about, say, corgi harnesses, the products we mention are chosen because they matter for a Pembroke Welsh Corgi — not because the commission rate is better on one brand than another. If a product is worth mentioning but has no affiliate link, it gets mentioned anyway. If a product has an affiliate link but isn't actually useful, it doesn't get mentioned.</p>
-    <p style="color:#4b5563;">No company pays Corgi Hub to be featured, reviewed, or described favourably in any guide. That has never happened and is not something we would agree to.</p>
+    <h2>What It Does Not Change</h2>
+    <p>Our writing decisions. When the Corgi Hub Writing Desk writes a guide about, say, corgi harnesses, the products we mention are chosen because they matter for a Pembroke Welsh Corgi — not because the commission rate is better on one brand than another. If a product is worth mentioning but has no affiliate link, it gets mentioned anyway. If a product has an affiliate link but isn't actually useful, it doesn't get mentioned.</p>
+    <p>No company pays Corgi Hub to be featured, reviewed, or described favourably in any guide. That has never happened and is not something we would agree to.</p>
 
-    <h2 style="color:#314c0e;font-size:1.3rem;margin:28px 0 10px;">Legal Notice (FTC)</h2>
-    <p style="color:#4b5563;">This page constitutes our required disclosure under 16 CFR Part 255 of the Federal Trade Commission's guidelines on endorsements and testimonials. Corgi Hub participates in the Amazon Services LLC Associates Program, an affiliate advertising programme. As an Amazon Associate, we earn from qualifying purchases.</p>
+    <h2>Legal Notice (FTC)</h2>
+    <p>This page constitutes our required disclosure under 16 CFR Part 255 of the Federal Trade Commission's guidelines on endorsements and testimonials. Corgi Hub participates in the Amazon Services LLC Associates Program, an affiliate advertising programme. As an Amazon Associate, we earn from qualifying purchases.</p>
 
     <p style="color:#6b7280;font-size:0.88rem;margin-top:28px;padding-top:16px;border-top:1px solid #e5e7eb;">Questions about this: <strong>hello@pembroke-welsh-corgi-hub.github.io</strong></p>
-  </article>
+  </section>
 </div>
-<footer style="background:#314c0e;color:rgba(255,255,255,0.75);margin-top:32px;">
-  <div style="max-width:1040px;margin:0 auto;padding:18px 22px;display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;">
-    <p>Corgi Hub</p>
+<footer class="footer">
+  <div class="footer-inner">
+    <p>Pembroke Welsh Corgi Guide</p>
     <p>
-      <a href="/privacy.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Privacy</a>
+      <a href="/privacy.html">Privacy</a>
       <span style="opacity:0.55;"> | </span>
-      <a href="/editorial-policy.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Review Process</a>
+      <a href="/disclosure.html">Disclosure</a>
       <span style="opacity:0.55;"> | </span>
-      <a href="/contact.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Contact</a>
+      <a href="/contact.html">Contact</a>
       <span style="opacity:0.55;"> | </span>
-      <a href="/sitemap.html" style="color:rgba(255,255,255,0.9);text-decoration:none;">Sitemap</a>
+      <a href="/sitemap.html">Sitemap</a>
     </p>
   </div>
 </footer>
