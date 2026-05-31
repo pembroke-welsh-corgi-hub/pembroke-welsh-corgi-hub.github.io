@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media (max-width:700px){
+  .layout-row{flex-direction:column!important;}
+  .layout-row aside{display:none!important;}
+  header nav{gap:8px!important;font-size:0.82rem!important;}
+  header div{flex-wrap:wrap!important;}
+}
+
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
+</style>
+<title>Corgi Picky Eater: When Fussiness Is Real and What to Do</title>
+<meta name="description" content="Is your corgi picky eater for real or just not hungry? Learn when to suspect a medical cause, how the 15-minute rule works, and when fussiness becomes a red flag." />
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://pembroke-welsh-corgi-hub.github.io/corgi-picky-eater-wont-eat/">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: "Book Antiqua", Georgia, serif; background: #f8f4ee; color: #1f2937; line-height: 1.78; }
+  a { color: #9a3412; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  .topbar { background: #1f3a5f; color: #fff; box-shadow: 0 2px 8px rgba(0,0,0,0.15); }
+  .topbar-inner { max-width: 1120px; margin: 0 auto; padding: 14px 22px; display: flex; justify-content: space-between; gap: 18px; align-items: center; }
+  .brand { color: #fff; font-size: 1.08rem; font-weight: 700; }
+  .nav { display: flex; gap: 14px; flex-wrap: wrap; }
+  .nav a { color: rgba(255,255,255,0.92); font-size: 0.92rem; }
+  .hero { background: linear-gradient(135deg, #c2410c 0%, #ea580c 100%); color: #fff; }
+  .hero-inner { max-width: 1120px; margin: 0 auto; padding: 32px 22px; }
+  .eyebrow { text-transform: uppercase; letter-spacing: 0.12em; font-size: 0.76rem; opacity: 0.9; }
+  .hero h1 { font-size: 2.18rem; line-height: 1.14; margin: 8px 0 12px; max-width: 860px; }
+  .hero p { max-width: 830px; color: rgba(255,255,255,0.93); }
+  .layout { max-width: 1120px; margin: 28px auto; padding: 0 22px 48px; display: grid; grid-template-columns: minmax(0, 1fr) 300px; gap: 26px; align-items: start; }
+  .article { background: #fff; border-radius: 12px; padding: 32px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .meta { color: #6b7280; font-size: 0.92rem; margin-bottom: 16px; }
+  .article h2 { color: #1f3a5f; font-size: 1.42rem; margin: 28px 0 12px; line-height: 1.25; }
+  .article h3 { color: #1f3a5f; font-size: 1.08rem; margin: 18px 0 10px; }
+  .article p { color: #4b5563; margin-bottom: 14px; }
+  .article ul, .article ol { padding-left: 22px; margin: 12px 0 18px; color: #4b5563; }
+  .article li { margin-bottom: 8px; }
+  .article table { width: 100%; border-collapse: collapse; margin: 18px 0 22px; font-size: 0.95rem; }
+  .article th { background: #1f3a5f; color: #fff; text-align: left; padding: 12px; }
+  .article td { padding: 12px; border: 1px solid #e5e7eb; vertical-align: top; }
+  .callout { background: #fff7ed; border-left: 4px solid #ea580c; border-radius: 8px; padding: 18px; margin: 18px 0 22px; }
+  .callout p { margin-bottom: 0; }
+  .note { background: #eff6ff; border-left: 4px solid #1d4ed8; border-radius: 8px; padding: 16px; margin: 18px 0 22px; }
+  .note p { margin-bottom: 0; }
+  .accent { color: #9a3412; font-weight: 700; }
+  .soft-ital { color: #1d4ed8; font-style: italic; }
+  .underline-accent { text-decoration: underline; text-decoration-color: #ea580c; text-decoration-thickness: 2px; text-underline-offset: 3px; font-weight: 700; }
+  .sidebar { position: sticky; top: 18px; display: grid; gap: 18px; }
+  .sidebar-panel { background: #fff; border-radius: 10px; padding: 20px; box-shadow: 0 1px 6px rgba(0,0,0,0.08); }
+  .sidebar-panel h3 { color: #1f3a5f; font-size: 1rem; margin-bottom: 10px; }
+  .sidebar-panel p, .sidebar-panel li { color: #4b5563; font-size: 0.92rem; }
+  .sidebar-panel ul { padding-left: 18px; }
+  .sidebar-newsletter { background: linear-gradient(135deg, #1f3a5f 0%, #355c8d 100%); color: #fff; }
+  .sidebar-newsletter h3, .sidebar-newsletter p { color: #fff; }
+  .sidebar-newsletter input { width: 100%; padding: 10px 11px; border: none; border-radius: 6px; margin: 10px 0 8px; }
+  .sidebar-newsletter button { width: 100%; padding: 10px; border: none; border-radius: 6px; background: #fff; color: #1f3a5f; font-weight: 700; cursor: pointer; }
+  details { border: 1px solid #e5e7eb; border-radius: 8px; padding: 14px 16px; margin: 0 0 12px; background: #fff; }
+  summary { cursor: pointer; font-weight: 700; color: #1f3a5f; }
+  .footer { background: #1f3a5f; color: rgba(255,255,255,0.78); }
+  .footer-inner { max-width: 1120px; margin: 0 auto; padding: 20px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  @media (max-width: 840px) {
+    .layout { grid-template-columns: 1fr; }
+    .sidebar { position: static; }
+    .hero h1 { font-size: 1.96rem; }
+  }
+
+  .breadcrumb { background: #fff; border-bottom: 1px solid #e5e7eb; }
+  .breadcrumb-inner { max-width: 1120px; margin: 0 auto; padding: 10px 22px 0; color: #6b7280; font-size: 0.88rem; display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+  .breadcrumb a { color: #6b7280; }
+  .breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
+</style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Corgi Picky Eater: When Fussiness Is Real and What to Do",
+  "description": "Is your corgi picky eater for real or just not hungry? Learn when to suspect a medical cause, how the 15-minute rule works, and when fussiness becomes a red flag.",
+  "author": {
+    "@type": "Organization",
+    "name": "Pembroke Welsh Corgi Hub Editorial Team"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Pembroke Welsh Corgi Hub"
+  },
+  "datePublished": "2026-05-31",
+  "dateModified": "2026-05-31",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://pembroke-welsh-corgi-hub.github.io/corgi-picky-eater-wont-eat/"
+  }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Is my corgi actually a picky eater or just not hungry?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "A corgi that eats when something more exciting is offered is almost certainly behaving, not suffering. A corgi that consistently refuses food across multiple meals, loses weight, or shows other symptoms deserves a vet check first."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "What is the 15-minute rule for picky dogs?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Put the bowl down, give the dog 15 minutes to eat, then pick the bowl up regardless of whether it was touched. No treats, no toppers, no hand-feeding until the next scheduled meal. Repeat consistently for several days."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can free-feeding make a corgi picky?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes. When food is always available, dogs lose the appetite cue that comes with meal timing. Switching to set mealtimes usually resolves mild fussiness within a week."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "When should I call a vet about my corgi not eating?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "If your corgi has skipped two or more full meals in a row, is losing weight, shows lethargy, vomiting, diarrhea, or seems painful around the mouth or abdomen, call your vet rather than assuming it is a behaviour problem."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I rotate proteins to help a picky corgi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Rotation can work but must be done slowly to avoid digestive upset. Switching foods too fast is itself a common cause of temporary refusal. If your corgi has no known allergies, a slow protein rotation over 7–10 days can sustain appetite long-term."
+      }
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="/">Pembroke Welsh Corgi Hub</a>
+    <nav class="nav">
+      <a href="/">Home</a>
+      <a href="/blog.html">Blog</a>
+      <a href="/care.html">Care</a>
+      <a href="/about.html">About</a>
+      <a href="/contact.html">Contact</a>
+      <a href="/sitemap.html">Sitemap</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <p class="eyebrow">Feeding &amp; Nutrition</p>
+    <h1>Corgi Picky Eater: When Fussiness Is Real and What to Do</h1>
+    <p>Some corgis turn down food for a good reason. Some do it because owners accidentally trained them to hold out for something better. Knowing which situation you are actually in is the only way to fix it without making things worse.</p>
+  </div>
+</section>
+
+<div class="layout">
+  <article class="article">
+
+    <nav class="article-breadcrumb" aria-label="Breadcrumb"><a href="/">Home</a><span>›</span><a href="/blog.html">Blog</a><span>›</span><span aria-current="page">Corgi Picky Eater</span></nav>
+    <p class="meta">Published 2026-05-31 on <a href="/blog.html">Pembroke Welsh Corgi Hub</a></p>
+
+    <p><strong>A corgi that refuses to eat</strong> is one of the more unsettling things a new owner encounters, partly because the breed has such a reputation for food obsession. When a dog famous for counter-surfing and biscuit theft suddenly turns its nose up at dinner, something feels wrong. Sometimes it is. Sometimes it is not. <span class="underline-accent">The first job is telling the two situations apart before reaching for a bag of food toppers.</span></p>
+
+    <p>This article walks through the most common real causes of food refusal in Pembroke Welsh Corgis, explains which patterns point to behaviour rather than health, and gives a practical method for resetting a picky eater without creating a new problem in the process. It also covers the one situation where none of the behavioural fixes matter at all: when a vet visit should come before anything else.</p>
+
+    <div class="callout">
+      <p><strong>Quick orientation:</strong> if your corgi has skipped two or more complete meals in a row, is losing weight, seems lethargic, or is showing any physical symptoms alongside the food refusal, <span class="accent">stop reading and call your vet first.</span> The rest of this article assumes you have already ruled out an acute medical problem.</p>
+    </div>
+
+    <h2>Is My Corgi Actually Picky, or Just Not Hungry?</h2>
+    <p>These are not the same situation, but owners conflate them constantly. A dog that is not hungry will often skip a meal, especially in hot weather, after unusual exercise, or after a change in routine. A dog that is genuinely picky will approach the bowl, sniff it, walk away, and then immediately accept something more interesting offered five minutes later.</p>
+
+    <p>The behavioural tell is <span class="soft-ital">selective refusal</span>: the dog refuses its regular food but eats treats without hesitation, picks out specific pieces and ignores the rest, or only eats when hand-fed or watched closely. If your corgi does any of these things consistently, the problem is almost certainly not the food itself. The problem is a set of habits that have taught the dog to wait for something better.</p>
+
+    <p>The honest question to ask is: has this dog ever gone a full 24 hours without eating, or does it always eat once the circumstances change? If the answer is "it always eats eventually when the right thing appears," you are dealing with a behavioural picky eater, not a sick dog and not a dog with a physiological appetite problem.</p>
+
+    <h2>Medical Reasons to Check First: Dental Pain, Nausea, and Parasites</h2>
+    <p>Before attributing food refusal to personality, it is worth knowing which medical causes look like fussiness but are not. Three come up frequently in Pembroke Welsh Corgis and in dogs generally.</p>
+
+    <h3>Dental and oral pain</h3>
+    <p>A dog with a cracked tooth, inflamed gums, or an oral mass will often approach food normally, begin eating, then pull away. Owners frequently describe this as "suddenly became picky" without realising the dog is stopping because it hurts. Signs that dental pain might be driving food refusal include dropping food mid-chew, preferring wet food over dry, chewing only on one side, or pawing at the mouth. <a href="/can-corgis-go-up-and-down-stairs.html">Physical discomfort of any kind can change daily behaviour</a> well beyond the obvious signs, and dental issues are easy to miss on a visual check at home.</p>
+
+    <h3>Nausea and gastrointestinal upset</h3>
+    <p>A nauseous dog frequently refuses food entirely rather than picking at it. Look for grass-eating, intermittent lip-licking, swallowing repeatedly, or a hunched posture. Mild nausea from dietary indiscretion or a minor stomach bug typically resolves within 24 hours. Recurring nausea — a dog that has "off days" several times a week — is worth investigating rather than managing with food swaps.</p>
+
+    <h3>Intestinal parasites</h3>
+    <p>Parasites are a less glamorous but real cause of variable appetite, especially in younger dogs or dogs that spend time in areas with other dogs. A dog with a significant parasite burden may eat well one day and refuse completely the next. Routine faecal testing is underused because owners assume worming treatments are sufficient, but resistance and re-exposure are common enough that a negative worming history does not fully rule out parasites as a factor.</p>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Sign</th>
+          <th>Points toward behavioural fussiness</th>
+          <th>Points toward a medical cause</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Accepts treats immediately after refusing bowl</td>
+          <td>Yes — selective refusal is a key behavioural marker</td>
+          <td>Less likely; sick dogs often refuse treats too</td>
+        </tr>
+        <tr>
+          <td>Weight stable over 2–3 weeks</td>
+          <td>Yes — behavioural picky eaters rarely lose weight</td>
+          <td>Weight loss points strongly to medical investigation</td>
+        </tr>
+        <tr>
+          <td>Eats fine when hand-fed or watched</td>
+          <td>Yes — attention-seeking is a behavioural pattern</td>
+          <td>No medical cause improves with hand-feeding alone</td>
+        </tr>
+        <tr>
+          <td>Drops food mid-chew, chews on one side</td>
+          <td>Unlikely to be behaviour</td>
+          <td>Yes — typical of dental or oral pain</td>
+        </tr>
+        <tr>
+          <td>Repeated lip-licking, grass-eating, hunching</td>
+          <td>Not typical</td>
+          <td>Yes — nausea indicators</td>
+        </tr>
+        <tr>
+          <td>Variable appetite day to day with no pattern</td>
+          <td>Possible but less consistent</td>
+          <td>Yes — parasites or systemic illness often show this</td>
+        </tr>
+        <tr>
+          <td>Fussiness started abruptly after months of normal eating</td>
+          <td>Possible if a new food or feeder was introduced</td>
+          <td>Yes — sudden onset warrants medical check first</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>True Behavioural Fussiness in Corgis</h2>
+    <p>Corgis are bright, persistent, and highly motivated by social interaction. These traits that make them entertaining companions also make them unusually good at training their owners to add extras to the bowl. The typical pattern develops like this: the dog hesitates at the bowl on one occasion, the owner adds something to make the food more appealing, the dog eats. The dog has now learned that hesitation produces a better outcome.</p>
+
+    <p>Over weeks or months, the threshold for "good enough food" rises. What started as a single topper becomes a rotating roster of toppers, a switch to wet food, a switch to a different brand, and eventually a dog that will only eat fresh cooked chicken with its kibble while the owner wonders what went wrong. Nothing went wrong. The dog simply did what dogs do: it found and repeated a behaviour that produced a reliable reward.</p>
+
+    <p>This is not a character flaw and it does not mean the corgi is spoiled in some irredeemable way. It means the feeding routine has accidentally created a strong reinforcement history for holding out. The fix is straightforward in principle, though it requires consistency that many owners find uncomfortable in the first few days.</p>
+
+    <h2>How Free-Feeding Creates Picky Eaters</h2>
+    <p>Free-feeding — leaving food available all day — is one of the most reliable ways to produce a dog that appears picky when switched to meal feeding. When food is always present, dogs graze when the mood strikes rather than eating from hunger. The appetite cue that makes a meal compelling is simply absent, because the dog never experiences meaningful hunger before a bowl appears.</p>
+
+    <p>When owners then try to move to structured mealtimes, the dog often ignores the first several meals. This looks like fussiness but is actually a calibration problem: the dog's appetite rhythm has not yet adjusted to a new schedule. Owners who interpret the first skipped meal as evidence of fussiness and revert to free-feeding are restarting the cycle.</p>
+
+    <p>Switching from free-feeding to two scheduled meals per day typically normalises appetite within five to seven days if no medical issues are present. The transition is easier than owners expect once they accept that a healthy dog will not harm itself by skipping a meal or two while adjusting.</p>
+
+    <div class="note">
+      <p><strong>Note:</strong> Corgis are prone to obesity, and free-feeding makes portion control almost impossible. The case for scheduled mealtimes is not just about fussiness — it is also about <span class="soft-ital">maintaining a healthy weight throughout the dog's life.</span></p>
+    </div>
+
+    <h2>The 15-Minute Rule: The Most Reliable Reset Method</h2>
+    <p>Once medical causes have been ruled out and you have identified the pattern as behavioural, the 15-minute rule is the most consistent fix owners report. The method is simple:</p>
+
+    <ol>
+      <li>Put the bowl down at the scheduled mealtime with the dog's regular food and no additions.</li>
+      <li>Leave the bowl available for 15 minutes.</li>
+      <li>Pick the bowl up at the end of 15 minutes regardless of whether the dog ate.</li>
+      <li>Offer no food of any kind — no treats, no toppers, no hand-feeding — until the next scheduled meal.</li>
+      <li>Repeat at the next meal with the same food and the same 15-minute window.</li>
+    </ol>
+
+    <p>Most behavioural picky eaters will eat at the second or third meal once they understand that holding out no longer produces a better outcome. Some take longer. The key failure mode is inconsistency: one family member who adds a treat "just this once" resets the learning and extends the process by days.</p>
+
+    <p>It is worth being honest that the first two days of this process are uncomfortable for owners, not for dogs. A healthy adult corgi who skips a meal or two while adjusting to a new rule is not suffering. The anxiety belongs to the human side of the equation. <a href="/when-do-corgi-ears-stand-up.html">Understanding normal corgi development helps calibrate which owner worries are worth acting on and which are not.</a></p>
+
+    <p>A few practical notes that improve the success rate:</p>
+    <ul>
+      <li>Feed in a quiet location without people hovering. Some corgis eat better with less audience pressure.</li>
+      <li>Use a consistent bowl in a consistent spot. Changing variables while trying to reset the routine introduces noise into the process.</li>
+      <li>Do not stare at the dog or offer encouragement while it eats. Feeding attention accidentally reinforces the attention-seeking component of the problem.</li>
+      <li>Stay consistent across everyone in the household. This is where most resets fail.</li>
+    </ul>
+
+    <h2>Food Rotation Versus a Single Protein: What Actually Helps</h2>
+    <p>Some owners respond to fussiness by rotating through multiple proteins or brands, reasoning that variety will sustain the dog's interest. This can work, but it comes with real caveats that are worth understanding before treating rotation as a default strategy.</p>
+
+    <p>The main risk of rapid rotation is digestive upset. A corgi's gut flora adjusts to a consistent diet over time, and switching proteins quickly — particularly in the middle of a fussiness reset — often causes loose stools or vomiting that gets attributed to the food rather than to the speed of the transition. A proper rotation happens over 7 to 10 days per protein, not overnight.</p>
+
+    <p>A single-protein diet is not inherently inferior. Many corgis eat the same food for years without fussiness once the behavioural component is removed through consistent meal structure. The argument for rotation is that it may prevent the neophobia some dogs develop toward a food they have eaten exclusively for years, but the evidence for this as a reliable prevention strategy is largely anecdotal.</p>
+
+    <p>The practical recommendation: if your corgi is a confirmed behavioural picky eater, fix the routine first using the 15-minute rule before changing the food at all. Food changes during a behavioural reset confuse the picture and make it harder to know what worked. Once eating is stable and consistent, gradual rotation is a reasonable choice if you want to pursue it.</p>
+
+    <h2>When Weight Loss Is a Red Flag That Changes Everything</h2>
+    <p>Everything written above applies to corgis whose weight is stable. Weight loss changes the calculus entirely. A dog that is losing weight while appearing to be a picky eater is not a behavioural picky eater — it is a dog whose energy intake is insufficient, and the cause needs to be found, not managed around with food tricks.</p>
+
+    <p>Corgis are dense, muscular dogs, and weight loss can be harder to spot visually than in a leaner breed. The practical check is running your hands along the ribs: you should be able to feel ribs without pressing hard, but not see them prominently. If the ribs are becoming more prominent week to week, that is a sign of meaningful weight loss rather than just variable daily intake. <a href="/corgi-ivdd-back-problems-recurrence.html">Sudden changes in mobility, appetite, or posture in a corgi should always prompt a vet visit rather than a wait-and-see approach.</a></p>
+
+    <p>Other red flags that move fussiness out of the behavioural category and into the medical one:</p>
+    <ul>
+      <li>Weight loss of more than 5–10% of body weight over a month</li>
+      <li>Muscle wasting, particularly over the hindquarters or topline</li>
+      <li>Lethargy alongside reduced appetite</li>
+      <li>Vomiting or diarrhea occurring alongside food refusal</li>
+      <li>Sudden onset of food refusal after a history of normal eating</li>
+      <li>A dog that refuses food it previously ate eagerly without any environmental change</li>
+    </ul>
+
+    <p>In any of these situations, the correct first step is a veterinary appointment, not a food experiment. Conditions including kidney disease, liver issues, hypoadrenocorticism, and several forms of cancer can all present initially as appetite changes before other symptoms become obvious. Early investigation gives better options than late investigation.</p>
+
+    <h2>FAQ</h2>
+    <details>
+      <summary>Is my corgi actually a picky eater or just not hungry?</summary>
+      <p>A corgi that refuses its bowl but eats treats immediately after is almost certainly a behavioural picky eater rather than a sick or truly appetite-suppressed dog. A corgi that refuses food across multiple meals, loses weight, or shows other symptoms needs a vet check before any behavioural approach.</p>
+    </details>
+    <details>
+      <summary>What is the 15-minute rule for picky dogs?</summary>
+      <p>Put the bowl down, give the dog 15 minutes to eat, then pick the bowl up regardless of how much was eaten. No supplements, treats, or additions until the next scheduled meal. Repeat consistently. Most behavioural picky eaters improve within two to four days.</p>
+    </details>
+    <details>
+      <summary>Can free-feeding make a corgi picky?</summary>
+      <p>Yes. When food is always available, dogs lose the hunger cue that makes a scheduled meal compelling. Switching to two set mealtimes usually normalises appetite within a week, as long as the transition is held consistently.</p>
+    </details>
+    <details>
+      <summary>When should I call the vet about my corgi not eating?</summary>
+      <p>Call your vet if your corgi has skipped two or more full meals in a row, is losing weight, shows lethargy, vomiting, diarrhea, pawing at the mouth, or if the refusal started suddenly without any change in routine or food.</p>
+    </details>
+    <details>
+      <summary>Should I rotate proteins to help a picky corgi?</summary>
+      <p>Fix the routine first, food second. If eating is already stable, slow protein rotation over 7 to 10 days per switch can sustain long-term interest. Rapid rotation during a behavioural reset usually causes digestive upset and muddies the results.</p>
+    </details>
+
+  </article>
+
+  <aside class="sidebar">
+    <section class="sidebar-panel sidebar-newsletter">
+      <h3>Corgi tips by email</h3>
+      <p>Get practical notes on feeding, health checks, and daily routines for Pembroke Welsh Corgis.</p>
+      <input type="email" placeholder="Your email">
+      <button type="button">Join the list</button>
+    </section>
+
+    <section class="sidebar-panel">
+      <h3>Quick Facts: Corgi Feeding</h3>
+      <ul>
+        <li>Two scheduled meals daily is the standard for adult corgis</li>
+        <li>The 15-minute rule resolves most behavioural fussiness within 2–4 days</li>
+        <li>Weight loss alongside refusal = vet visit, not a food experiment</li>
+        <li>Free-feeding is a common root cause of fussiness that is easy to reverse</li>
+        <li>Dental pain is the most frequently missed medical cause of food refusal</li>
+      </ul>
+    </section>
+
+    <section class="sidebar-panel">
+      <h3>Related Articles</h3>
+      <ul>
+        <li><a href="/can-corgis-go-up-and-down-stairs.html">Keep Your Corgi Safe on Stairs: The Complete Guide</a></li>
+        <li><a href="/when-do-corgi-ears-stand-up.html">When Do Corgi Ears Stand Up? Timeline and Tips</a></li>
+        <li><a href="/corgi-ivdd-back-problems-recurrence.html">Corgi IVDD: Stages, Recurrence Risk &amp; What Owners Do After Diagnosis</a></li>
+        <li><a href="/corgi-degenerative-myelopathy-age-of-onset-timeline.html">Corgi Degenerative Myelopathy Age of Onset Timeline</a></li>
+      </ul>
+    </section>
+
+    <section class="sidebar-panel">
+      <h3>About this article</h3>
+      <p>Part of the Pembroke Welsh Corgi Hub feeding cluster: practical, vet-first advice on nutrition, appetite, weight management, and daily feeding routines for real corgi owners.</p>
+    </section>
+  </aside>
+</div>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <p>© 2026 Pembroke Welsh Corgi Hub. Honest corgi care for real owners.</p>
+  </div>
+</footer>
+
+<script>
+(function() {
+  var _ga4 = "";
+  var _site = "pembroke-welsh-corgi-hub.github.io";
+  var _article = "corgi-picky-eater-wont-eat";
+  var _startTime = Date.now();
+  var _scrollMarks = {25: false, 50: false, 75: false, 100: false};
+
+  function _send(name, params) {
+    var data = Object.assign({page: _article, site: _site}, params);
+    if (_ga4 && typeof gtag === "function") {
+      gtag("event", name, data);
+    }
+    try {
+      var log = JSON.parse(localStorage.getItem("_ptrack") || "[]");
+      log.push({t: new Date().toISOString(), e: name, d: data});
+      if (log.length > 200) log = log.slice(-200);
+      localStorage.setItem("_ptrack", JSON.stringify(log));
+    } catch(e) {}
+  }
+
+  // Scroll depth
+  function _onScroll() {
+    var scrolled = window.scrollY + window.innerHeight;
+    var total = document.documentElement.scrollHeight;
+    var pct = Math.round((scrolled / total) * 100);
+    [25, 50, 75, 100].forEach(function(mark) {
+      if (!_scrollMarks[mark] && pct >= mark) {
+        _scrollMarks[mark] = true;
+        _send("scroll_depth", {depth: mark});
+      }
+    });
+  }
+  window.addEventListener("scroll", _onScroll, {passive: true});
+
+  // Time on page
+  function _sendTime() {
+    var secs = Math.round((Date.now() - _startTime) / 1000);
+    _send("time_on_page", {seconds: secs});
+  }
+  document.addEventListener("visibilitychange", function() {
+    if (document.hidden) _sendTime();
+  });
+  window.addEventListener("pagehide", _sendTime);
+
+  // Newsletter CTA
+  document.addEventListener("click", function(e) {
+    var btn = e.target.closest("button");
+    if (btn) {
+      var box = btn.closest(".sidebar-newsletter, [class*='newsletter']");
+      if (box) _send("newsletter_click", {label: btn.textContent.trim().slice(0, 40)});
+    }
+    var link = e.target.closest("a[href]");
+    if (link && !link.href.includes(window.location.hostname)) {
+      _send("outbound_click", {url: link.href.slice(0, 100)});
+    }
+  });
+
+  // Pageview
+  _send("article_view", {});
+})();
+</script>
+<script src="/assets/router.js" defer></script>
+</body>
+</html>
