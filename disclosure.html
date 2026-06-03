@@ -28,6 +28,11 @@
   .footer { background: #324e0e; color: rgba(255,255,255,0.75); margin-top: 32px; }
   .footer-inner { max-width: 1040px; margin: 0 auto; padding: 18px 22px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
   .footer-inner a { color: rgba(255,255,255,0.9); }
+
+  .article-breadcrumb { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; margin: 0 0 12px; color: #6b7280; font-size: 0.88rem; }
+  .article-breadcrumb a { color: #6b7280; }
+  .article-breadcrumb span[aria-current="page"] { color: #374151; font-weight: 600; }
+
 </style>
 </head>
 <body>
@@ -44,11 +49,7 @@
     </nav>
   </div>
 </header>
-<div class="breadcrumb">
-  <div class="breadcrumb-inner">
-    <a href="/">Home</a><span>›</span><span aria-current="page">How We Keep the Lights On</span>
-  </div>
-</div>
+
 <div class="wrap">
   <section class="panel">
     <h1>A Note on How We Keep the Lights On</h1>
