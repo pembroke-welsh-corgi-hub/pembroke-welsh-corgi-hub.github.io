@@ -29,7 +29,7 @@
     box-shadow: 0 2px 8px rgba(0,0,0,0.18);
   }
   .topbar-inner {
-    max-width: 1000px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 0 20px;
     display: flex;
@@ -70,7 +70,7 @@
     border-bottom: 1px solid #e5e7eb;
   }
   .breadcrumb-inner {
-    max-width: 1000px;
+    max-width: 1120px;
     margin: 0 auto;
     padding: 8px 20px;
     font-size: 0.82rem;
@@ -81,14 +81,13 @@
 
   /* ── Layout wrapper ── */
   .page-wrap {
-    max-width: 1000px;
+    max-width: 1120px;
     margin: 28px auto;
     padding: 0 20px 64px;
     display: grid;
-    grid-template-columns: 1fr 280px;
+    grid-template-columns: 1fr 300px;
     gap: 28px;
-    align-items: start;
-  }
+    align-items: start;;grid-template-columns:minmax(0, 1fr) 300px;gap:26px;padding-left:22px;padding-right:22px;}
   @media (max-width: 700px) {
     .page-wrap { grid-template-columns: 1fr; }
     .sidebar { display: none; }
@@ -211,15 +210,79 @@
     #bottom-bar span { display: none; }
   }
 </style>
+<style id="sc-font">body{font-family:"Book Antiqua", Georgia, serif}body h1,body h2,body h3{font-family:"Book Antiqua", Georgia, serif}</style>
+<style id="site-chrome">
+:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
+[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
+/* ── Top bar ── */
+  .sc-topbar{
+    background: #3f6212;
+    color: #fff;
+    padding: 0 0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  }
+.sc-topbar-inner{
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 54px;
+  }
+.sc-topbar-brand{
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: #fff;
+    letter-spacing: 0.01em;
+  }
+.sc-topbar-nav{
+    display: flex;
+    gap: 4px;
+    list-style: none;
+  }
+.sc-topbar-nav a{
+    color: rgba(255,255,255,0.88);
+    font-size: 0.88rem;
+    padding: 6px 12px;
+    border-radius: 4px;
+    transition: background 0.15s;
+  }
+.sc-topbar-nav a:hover{
+    background: rgba(255,255,255,0.15);
+    color: #fff;
+    text-decoration: none;
+  }
+@media(max-width:600px) {
+    .sc-topbar-nav { display: none; }}
+/* ── Footer ── */
+  .sc-footer{
+    background: #324e0e;
+    color: rgba(255,255,255,0.75);
+    text-align: center;
+    padding: 24px 16px;
+    font-size: 0.82rem;
+    margin-top: 40px;
+  }
+.sc-footer-nav{ margin-bottom: 8px; }
+.sc-footer-nav a{
+    color: rgba(255,255,255,0.85);
+    margin: 0 10px;
+    font-size: 0.85rem;
+  }
+.sc-topbar a,.sc-footer a{text-decoration:none}
+@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
+</style>
 </head>
 <body>
-
-<!-- TOP BAR -->
-<header class="topbar">
-  <div class="topbar-inner">
-    <a class="topbar-brand" href="/">Pembroke Welsh Corgi Guide</a>
+<header class="sc-topbar">
+  <div class="sc-topbar-inner">
+    <a class="sc-topbar-brand" href="/">Pembroke Welsh Corgi Guide</a>
     <nav>
-      <ul class="topbar-nav">
+      <ul class="sc-topbar-nav">
         <li><a href="/">Home</a></li>
         <li><a href="/blog.html">Blog</a></li>
         <li><a href="/care.html">Care</a></li>
@@ -231,14 +294,11 @@
   </div>
 </header>
 
-<div id="top-banner" style="background:#3f6212;color:#fff;padding:10px 20px;display:flex;align-items:center;justify-content:space-between;font-size:0.87rem;">
-  <span>🐾 Get free <strong>Pembroke Welsh Corgi</strong> tips — join Pembroke Welsh Corgi owners who love their dogs!</span>
-  <span style="display:flex;gap:8px;align-items:center;">
-    <input type="email" id="banner-email" placeholder="your@email.com" style="padding:6px 10px;border:none;border-radius:4px;font-size:0.84rem;width:190px;outline:none;">
-    <button onclick="handleBannerSubmit()" style="background:#fff;color:#3f6212;border:none;border-radius:4px;padding:6px 14px;font-weight:700;cursor:pointer;font-size:0.84rem;">Subscribe</button>
-    <button onclick="document.getElementById('top-banner').style.display='none'" style="background:rgba(255,255,255,0.2);color:#fff;border:none;border-radius:4px;padding:6px 10px;cursor:pointer;font-size:1rem;">✕</button>
-  </span>
-</div>
+
+<!-- TOP BAR -->
+
+
+
 
 <!-- BREADCRUMB -->
 <div class="breadcrumb">
@@ -265,12 +325,11 @@
     
         <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/corgi-picky-eater.html" style="color:#324e0e; text-decoration:none;">Corgi Picky Eater</a>
+                <a href="/corgi-biting-phase-how-long.html" style="color:#324e0e; text-decoration:none;">How Long Does the Corgi Biting Phase Last? Timeline and Solutions</a>
             </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-06-03</p>
-            <p style='color:#555; margin:8px 0 0;'>Updated for corgi picky eater 2026 — latest insights &amp; psychological tricks</p>
+            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-06-17</p>
+            <p style='color:#555; margin:8px 0 0;'>Discover the corgi biting phase timeline, why puppies bite, and proven training methods to stop destructive chewing and mouthing behavior safely.</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/corgi-picky-eater-wont-eat.html" style="color:#324e0e; text-decoration:none;">Corgi Picky Eater: When Fussiness Is Real and What to Do</a>
@@ -278,7 +337,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-31</p>
             <p style='color:#555; margin:8px 0 0;'>Is your corgi picky eater for real or just not hungry? Learn when to suspect a medical cause, how the 15-minute rule works, and when fussiness becomes a red flag.</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/corgi-degenerative-myelopathy-age-of-onset-timeline.html" style="color:#324e0e; text-decoration:none;">Corgi Degenerative Myelopathy Age Of Onset Timeline</a>
@@ -286,7 +344,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-27</p>
             <p style='color:#555; margin:8px 0 0;'>Corgi Degenerative Myelopathy Age Of Onset Timeline</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/corgi-ivdd-back-problems-recurrence.html" style="color:#324e0e; text-decoration:none;">Corgi IVDD: Stages, Recurrence Risk & What Owners Actually Do After Diagnosis</a>
@@ -294,7 +351,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-26</p>
             <p style='color:#555; margin:8px 0 0;'>Corgi IVDD: Stages, Recurrence Risk & What Owners Actually Do After Diagnosis</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/international-corgi-day-2026.html" style="color:#324e0e; text-decoration:none;">International Corgi Day 2026: Dates, Events & Celebration Ideas</a>
@@ -302,7 +358,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-26</p>
             <p style='color:#555; margin:8px 0 0;'>International Corgi Day falls on June 4, 2026. Discover events worldwide, celebration ideas at home, and what Corgi owners actually do for the occasion.</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/can-corgis-go-up-and-down-stairs.html" style="color:#324e0e; text-decoration:none;">Can Corgis Go Up and Down Stairs? Safety Rules</a>
@@ -310,7 +365,6 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
             <p style='color:#555; margin:8px 0 0;'>Find out when Pembroke Welsh Corgis can use stairs, when a ramp is safer, and which warning signs mean you should stop and call your vet.</p>
         </article>
-
         <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
             <h2 style="margin-top:0; font-size:1.2rem;">
                 <a href="/when-do-corgi-ears-stand-up.html" style="color:#324e0e; text-decoration:none;">When Do Corgi Ears Stand Up? Timeline and Tips</a>
@@ -318,37 +372,13 @@
             <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
             <p style='color:#555; margin:8px 0 0;'>When Do Corgi Ears Stand Up? Timeline and Tips</p>
         </article>
-
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/disclosure.html" style="color:#324e0e; text-decoration:none;">A Note on How We Keep the Lights On — Corgi Hub</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-01-01</p>
-            <p style='color:#555; margin:8px 0 0;'>Corgi Hub's funding disclosure: how affiliate links work, what income is generated, and what it means for editorial independence.</p>
-        </article>
-
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/editorial-policy.html" style="color:#324e0e; text-decoration:none;">Our Review Process — Corgi Hub</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-01-01</p>
-            <p style='color:#555; margin:8px 0 0;'>How the Corgi Hub Writing Desk researches, reviews, and publishes Pembroke Welsh Corgi care guides.</p>
-        </article>
     
   </main>
 
   <!-- SIDEBAR -->
   <aside class="sidebar">
     
-    <div class="sidebar-widget">
-      <h3>Get Pembroke Welsh Corgi Tips</h3>
-      <p>Weekly care guides, health tips and breed news for Pembroke Welsh Corgi owners.</p>
-      <form onsubmit="return handleSidebarSubmit(event);" action="#" method="post">
-        <input type="email" name="email" placeholder="your@email.com" required>
-        <button type="submit">Subscribe Free</button>
-      </form>
-      <p class="disclaimer">No spam. Unsubscribe anytime.</p>
-    </div>
+    
 
     <div class="sidebar-about">
       <strong>About Pembroke Welsh Corgi Guide</strong>
@@ -364,41 +394,17 @@
         <li><a href="/privacy.html">Privacy</a></li>
         <li><a href="/sitemap.html">Sitemap</a></li>
       </ul>
-      <h4>Latest articles</h4><ul><li><a href="/corgi-picky-eater.html">Corgi Picky Eater</a></li><li><a href="/corgi-picky-eater-wont-eat.html">Corgi Picky Eater: When Fussiness Is Real and What to Do</a></li><li><a href="/corgi-degenerative-myelopathy-age-of-onset-timeline.html">Corgi Degenerative Myelopathy Age Of Onset Timeline</a></li><li><a href="/corgi-ivdd-back-problems-recurrence.html">Corgi IVDD: Stages, Recurrence Risk & What Owners Actually Do After Diagnosis</a></li></ul>
+      <h4>Latest articles</h4><ul><li><a href="/corgi-biting-phase-how-long.html">How Long Does the Corgi Biting Phase Last? Timeline and Solutions</a></li><li><a href="/corgi-picky-eater-wont-eat.html">Corgi Picky Eater: When Fussiness Is Real and What to Do</a></li><li><a href="/corgi-degenerative-myelopathy-age-of-onset-timeline.html">When Corgis Start Losing Their Legs</a></li><li><a href="/corgi-ivdd-back-problems-recurrence.html">Corgi IVDD: 30–40% Recurrence Rate and the 48-Hour Surgical Window That Determines Recovery</a></li><li><a href="/international-corgi-day-2026.html">International Corgi Day 2026: Dates, Events &amp; Celebration Ideas</a></li><li><a href="/can-corgis-go-up-and-down-stairs.html">Keep Your Corgi Safe on Stairs: The Complete Guide</a></li></ul>
     </div>
   </aside>
 
 </div>
 
 <!-- FULL-WIDTH EMAIL BLOCK (wszystkie blogi) -->
-<div style="background:#3f6212;padding:48px 20px;text-align:center;">
-  <div style="max-width:560px;margin:0 auto;color:#fff;">
-    <h2 style="font-size:1.6rem;margin-bottom:10px;font-weight:700;">Love Pembroke Welsh Corgis?</h2>
-    <p style="font-size:1rem;opacity:0.9;margin-bottom:24px;">Join thousands of Pembroke Welsh Corgi owners getting free weekly care tips, health guides and breed news.</p>
-    <form onsubmit="return handleFullWidthSubmit(event);" style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;">
-      <input type="email" name="email" placeholder="Enter your email address" required
-        style="flex:1;min-width:220px;max-width:340px;padding:13px 16px;border:none;border-radius:6px;font-size:0.97rem;outline:none;">
-      <button type="submit"
-        style="background:#fff;color:#3f6212;border:none;border-radius:6px;padding:13px 28px;font-weight:700;font-size:0.97rem;cursor:pointer;white-space:nowrap;">
-        Subscribe Free
-      </button>
-    </form>
-    <p style="font-size:0.75rem;opacity:0.65;margin-top:12px;">No spam. Unsubscribe anytime. We respect your privacy.</p>
-  </div>
-</div>
+
 
 <!-- FOOTER -->
-<footer class="footer">
-  <div class="footer-nav">
-    <a href="/">Home</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/about.html">About</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/sitemap.html">Sitemap</a>
-  </div>
-  <p>&copy; 2026 pembroke-welsh-corgi-hub.github.io &mdash; Pembroke Welsh Corgi Guide. All rights reserved.</p>
-</footer>
+
 
 
 
@@ -430,5 +436,16 @@
     return false;
   }
 </script>
+<footer class="sc-footer">
+  <div class="sc-footer-nav">
+    <a href="/">Home</a>
+    <a href="/blog.html">Blog</a>
+    <a href="/about.html">About</a>
+    <a href="/contact.html">Contact</a>
+    <a href="/privacy.html">Privacy</a>
+    <a href="/sitemap.html">Sitemap</a>
+  </div>
+  <p>&copy; 2026 pembroke-welsh-corgi-hub.github.io &mdash; Pembroke Welsh Corgi Guide. All rights reserved.</p>
+</footer>
 </body>
 </html>
