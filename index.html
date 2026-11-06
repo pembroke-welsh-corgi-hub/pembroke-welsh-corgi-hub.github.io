@@ -3,591 +3,307 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Pembroke Welsh Corgi Guide — Care, Facts &amp; National Day</title>
-<meta name="description" content="Your complete resource for Pembroke Welsh Corgi lovers. Breed facts, care tips, national day celebration guide and more.">
+<title>Corgi Hub — Pembroke Welsh Corgi Guide</title>
+<meta name="description" content="Practical guides for Pembroke Welsh Corgi owners: grooming, shedding, behavior, weight, ears and everyday corgi life.">
 <link rel="canonical" href="https://pembroke-welsh-corgi-hub.github.io/">
 <meta name="robots" content="index, follow">
-<style>
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body {
-    font-family: 'Garamond', 'Baskerville', serif;
-    font-size: 16px;
-    line-height: 1.7;
-    color: #222;
-    background: #f8f8f8;
-  }
-  a { color: #3f6212; text-decoration: none; }
-  a:hover { text-decoration: underline; color: #324e0e; }
-
-  /* ── Top bar ── */
-  .topbar {
-    background: #3f6212;
-    color: #fff;
-    padding: 0 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  }
-  .topbar-inner {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 54px;
-  }
-  .topbar-brand {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.01em;
-  }
-  .topbar-nav {
-    display: flex;
-    gap: 4px;
-    list-style: none;
-  }
-  .topbar-nav a {
-    color: rgba(255,255,255,0.88);
-    font-size: 0.88rem;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.15s;
-  }
-  .topbar-nav a:hover {
-    background: rgba(255,255,255,0.15);
-    color: #fff;
-    text-decoration: none;
-  }
-  @media(max-width:600px) {
-    .topbar-nav { display: none; }
-  }
-
-  /* ── Breadcrumb ── */
-  .breadcrumb {
-    background: #fff;
-    border-bottom: 1px solid #e5e7eb;
-  }
-  .breadcrumb-inner {
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 8px 20px;
-    font-size: 0.82rem;
-    color: #6b7280;
-  }
-  .breadcrumb-inner a { color: #3f6212; }
-  .breadcrumb-inner span { margin: 0 5px; }
-
-  /* ── Layout wrapper ── */
-  .page-wrap {
-    max-width: 1120px;
-    margin: 28px auto;
-    padding: 0 20px 64px;
-    display: grid;
-    grid-template-columns: 1fr 300px;
-    gap: 28px;
-    align-items: start;;grid-template-columns:minmax(0, 1fr) 300px;gap:26px;padding-left:22px;padding-right:22px;}
-  @media (max-width: 700px) {
-    .page-wrap { grid-template-columns: 1fr; }
-    .sidebar { display: none; }
-  }
-
-  /* ── Main ── */
-  .main-content {
-    background: #fff;
-    border-radius: 8px;
-    padding: 28px 28px 32px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  }
-  .main-content h1 {
-    font-size: 1.75rem;
-    color: #324e0e;
-    margin-bottom: 10px;
-    line-height: 1.3;
-    border-bottom: 3px solid #3f6212;
-    padding-bottom: 12px;
-  }
-  .main-content .intro {
-    color: #555;
-    margin-bottom: 28px;
-    font-size: 1rem;
-  }
-  .article-card {
-    border: 1px solid #e5e7eb;
-    border-left: 4px solid #3f6212;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 6px;
-    background: #fafafa;
-    transition: box-shadow 0.2s;
-  }
-  .article-card:hover { box-shadow: 0 3px 10px rgba(0,0,0,0.08); }
-  .article-card h2 {
-    font-size: 1.1rem;
-    margin-bottom: 6px;
-  }
-  .article-card h2 a { color: #324e0e; }
-  .article-card .meta { color: #9ca3af; font-size: 0.8rem; margin-bottom: 6px; }
-  .article-card p { color: #555; font-size: 0.93rem; margin: 0; }
-
-  /* ── Categories ── */
-  .categories {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin-bottom: 24px;
-  }
-  .cat-tag {
-    background: #3f6212;
-    color: #fff;
-    padding: 4px 12px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 600;
-  }
-
-  /* ── Sidebar ── */
-  .sidebar { position: sticky; top: 70px; }
-  .sidebar-widget {
-    background: #3f6212;
-    border-radius: 10px;
-    padding: 22px 18px;
-    color: #fff;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.13);
-    margin-bottom: 20px;
-  }
-  .sidebar-widget h3 { font-size: 1rem; margin-bottom: 8px; font-weight: 700; }
-  .sidebar-widget p { font-size: 0.86rem; margin-bottom: 12px; opacity: 0.9; }
-  .sidebar-widget input[type="email"] {
-    width: 100%; padding: 9px 11px; border: none; border-radius: 5px;
-    font-size: 0.88rem; margin-bottom: 8px; outline: none;
-  }
-  .sidebar-widget button {
-    width: 100%; padding: 10px; background: #fff; color: #3f6212;
-    border: none; border-radius: 5px; font-weight: 700; font-size: 0.88rem;
-    cursor: pointer;
-  }
-  .sidebar-widget .disclaimer {
-    font-size: 0.7rem; opacity: 0.65; margin-top: 8px; text-align: center;
-  }
-  .sidebar-about {
-    background: #fff; border-radius: 8px; padding: 18px 16px;
-    font-size: 0.88rem; color: #444; line-height: 1.6;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-    margin-bottom: 20px;
-  }
-  .sidebar-about strong { color: #324e0e; display: block; margin-bottom: 6px; font-size: 0.95rem; }
-  .sidebar-links {
-    background: #fff; border-radius: 8px; padding: 16px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-  }
-  .sidebar-links h4 { font-size: 0.9rem; color: #324e0e; margin-bottom: 10px; }
-  .sidebar-links ul { list-style: none; }
-  .sidebar-links li { padding: 4px 0; border-bottom: 1px solid #f0f0f0; font-size: 0.86rem; }
-  .sidebar-links li:last-child { border: none; }
-  .sidebar-links a { color: #3f6212; }
-
-  /* ── Footer ── */
-  .footer {
-    background: #324e0e;
-    color: rgba(255,255,255,0.75);
-    text-align: center;
-    padding: 24px 16px;
-    font-size: 0.82rem;
-    margin-top: 40px;
-  }
-  .footer-nav { margin-bottom: 8px; }
-  .footer-nav a {
-    color: rgba(255,255,255,0.85);
-    margin: 0 10px;
-    font-size: 0.85rem;
-  }
-
-  /* ── Bottom mobile bar (wariant bottom_mobile) ── */
-  #bottom-bar input[type="email"] { flex: 1; min-width: 0; }
-  @media (max-width: 480px) {
-    #bottom-bar span { display: none; }
-  }
+<style id="pwch-ds">
+:root{--red:#c4302b;--daff:#fedb5f;--slate:#2d3a4a;--cream:#fffcf0;--page:#ffffff;--muted:#6b7280;--line:#e5e7eb;--link:#0066cc;
+--display:"Patrick Hand","Comic Neue","Segoe Print",cursive;--body:"Nunito","Segoe UI","Helvetica Neue",Arial,sans-serif;--r:24px;--wrap:1200px}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;font-family:var(--body);font-size:17px;line-height:1.65;color:var(--slate);background:var(--cream)}
+a{color:var(--link)}a:visited{color:#0052a3}
+h1,h2,h3{font-family:var(--display);font-weight:400;color:var(--slate);line-height:1.15;letter-spacing:-.01em}
+img{max-width:100%;height:auto}
+.skip{position:absolute;left:-9999px}.skip:focus{left:12px;top:12px;z-index:9;background:var(--page);padding:10px 14px;border:3px solid var(--red);border-radius:var(--r)}
+.label{margin:0 0 12px;font:800 11px/1.4 var(--body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.label b{color:var(--slate)}
+.btn,.btn:visited{display:inline-flex;align-items:center;gap:8px;min-height:50px;padding:0 32px;border-radius:var(--r);background:var(--red);color:var(--page);font:700 16px/1 var(--body);text-decoration:none;transition:transform .15s,box-shadow .15s;box-shadow:0 4px 0 #8a1f1b}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 0 #8a1f1b;color:var(--page)}
+.arrow,.arrow:visited{color:var(--red);font-weight:700;text-decoration:none;border-bottom:2px solid var(--daff);padding-bottom:2px}
+.arrow:hover{border-bottom-color:var(--red)}
+.sc-topbar{background:var(--slate);border-bottom:4px solid var(--daff);position:sticky;top:0;z-index:50}
+.sc-topbar-inner{max-width:var(--wrap);margin:0 auto;padding:0 28px;min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.sc-topbar-brand,.sc-topbar-brand:visited{color:var(--daff)!important;text-decoration:none;font:400 24px/1.1 var(--display);letter-spacing:-.01em;display:inline-flex;align-items:center;gap:8px}
+.sc-topbar-brand small{font-size:14px;font-family:var(--body);color:rgba(254,219,95,.7);margin-left:4px}
+.sc-topbar-nav{list-style:none;margin:0;padding:0;display:flex;gap:4px}
+.sc-topbar-nav a,.sc-topbar-nav a:visited{display:block;padding:12px 18px;color:rgba(255,255,255,.85);text-decoration:none;font-size:15px;font-weight:600;border-radius:var(--r);transition:background .15s,color .15s}
+.sc-topbar-nav a:hover,.sc-topbar-nav a[aria-current]{background:var(--daff);color:var(--slate)}
+.sc-topbar-nav .cta a{background:var(--red);color:var(--page);box-shadow:0 3px 0 #8a1f1b}
+.sc-topbar-nav .cta a:hover{background:#d63a35}
+.pwch-menu{display:none}
+@media(max-width:860px){.sc-topbar-nav{display:none}.pwch-menu{display:block}
+.pwch-menu summary{list-style:none;cursor:pointer;width:48px;height:48px;border:2px solid var(--daff);border-radius:var(--r);display:grid;place-content:center;color:var(--daff);font:400 22px/1 var(--display);padding:0;background:transparent}
+.pwch-menu summary::-webkit-details-marker{display:none}
+.pwch-menu[open] summary{background:rgba(254,219,95,.15)}
+.pwch-panel{position:fixed;left:0;right:0;top:68px;bottom:0;overflow:auto;background:var(--page);padding:28px 24px 48px;border-top:4px solid var(--daff)}
+.pwch-panel>a,.pwch-panel>a:visited{display:flex;align-items:baseline;gap:14px;padding:18px 10px;border-bottom:1px solid var(--line);color:var(--slate);text-decoration:none;font:400 22px/1.2 var(--display)}
+.pwch-panel>a:hover{background:var(--cream);border-radius:var(--r)}
+.pwch-panel .minor{display:flex;flex-wrap:wrap;gap:8px 24px;padding:24px 6px 0;border-top:2px solid var(--daff)}
+.pwch-panel .minor a{font-size:15px;color:var(--muted);font-family:var(--body);font-weight:600}}
+.sc-footer{background:var(--slate);color:rgba(255,255,255,.7);font-size:15px;border-top:6px solid var(--daff)}
+.sc-footer-inner{max-width:var(--wrap);margin:0 auto;padding:48px 28px;display:grid;grid-template-columns:minmax(0,1fr);gap:24px;text-align:center}
+.sc-footer-nav{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:center}
+.sc-footer a,.sc-footer a:visited{color:var(--daff);text-decoration:none;font-weight:600;border-radius:var(--r);padding:8px 12px;transition:background .15s}
+.sc-footer a:hover{background:rgba(254,219,95,.15);color:var(--daff)}
+.sc-footer .brand{font:400 22px/1 var(--display);color:var(--daff);text-decoration:none}
+.sc-footer p{margin:14px 0 0;max-width:600px;opacity:.7;font-size:14px;line-height:1.7}
+.sec{max-width:var(--wrap);margin:0 auto;padding:64px 28px}
+.sec h2{font-size:clamp(30px,3.2vw,42px);margin:0 0 12px}
+.sec-lead{margin:0 0 36px;max-width:600px;color:var(--muted)}
+.band{background:var(--page);position:relative}
+.band::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:repeating-linear-gradient(90deg,var(--daff) 0 24px,transparent 24px 32px)}
+.hero-home{max-width:var(--wrap);margin:0 auto;padding:56px 28px 52px;display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.9fr);gap:48px;align-items:center}
+.hero-home h1{margin:0 0 18px;font-size:clamp(36px,5vw,64px);line-height:1.04;letter-spacing:-.02em}
+.hero-home h1 .red{color:var(--red)}.hero-home h1 .gold{color:#b8860b}
+.hero-home .intro{margin:0 0 28px;max-width:520px;font-size:19px;color:var(--muted)}
+.hero-actions{display:flex;flex-wrap:wrap;gap:16px 28px;align-items:center}
+.hero-figure{position:relative;margin:0;justify-self:center;width:min(380px,100%)}
+.hero-figure img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 25%;border:4px solid var(--daff);border-radius:calc(var(--r) + 16px);box-shadow:12px 12px 0 rgba(196,48,43,.25)}
+.hero-figure figcaption{position:absolute;right:8px;bottom:-22px;font:italic 12px/1 var(--body);color:var(--muted);padding:4px 14px;background:var(--cream);border:2px solid var(--daff);border-radius:var(--r)}
+.paths{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
+.path{background:var(--cream);border:2px solid var(--line);border-radius:calc(var(--r) + 8px);padding:28px;display:flex;flex-direction:column;gap:10px;transition:border-color .15s,transform .15s}
+.path:hover{border-color:var(--red);transform:translateY(-3px)}
+.path .pwch-icon{width:52px;height:52px;border-radius:50%;background:var(--daff);display:grid;place-content:center;font-size:24px;margin-bottom:4px}
+.path h3{margin:4px 0 0;font-size:22px}
+.path p{margin:0;color:var(--muted)}
+.path ul{margin:4px 0 10px;padding:0;list-style:none;display:grid;gap:6px;font-size:15px}
+.path li a{text-decoration:none;color:var(--slate)}.path li a:hover{color:var(--red)}
+.path .arrow{margin-top:auto;align-self:flex-start}
+.nums{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;padding:40px 28px}
+.num{text-align:center;background:var(--cream);border-radius:var(--r);padding:28px 16px;border:2px solid var(--line)}
+.num b{display:block;font:400 clamp(44px,4.5vw,56px)/1 var(--display);color:var(--red);letter-spacing:-.03em}
+.num b small{display:block;font-size:.35em;margin-top:4px;color:var(--muted)}
+.num p{margin:10px 0 10px;font-size:15px;color:var(--slate)}
+.num a{font-size:14px;color:var(--muted);font-weight:600}
+.cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px}
+.card{position:relative;background:var(--page);border:2px solid var(--line);border-radius:calc(var(--r) + 12px);padding:24px;transition:border-color .15s,transform .15s;display:flex;flex-direction:column;gap:8px}
+.card:hover{border-color:var(--red);transform:translateY(-3px)}
+.card .kicker{margin:0 0 4px;font:700 11px/1.4 var(--body);letter-spacing:.08em;text-transform:uppercase;color:var(--red)}
+.card h2,.card h3{margin:0;font-size:20px;line-height:1.2}
+.card h2 a,.card h3 a,.card h2 a:visited,.card h3 a:visited{color:var(--slate);text-decoration:none}
+.card h2 a::after,.card h3 a::after{content:"";position:absolute;inset:0}
+.card p{margin:0;font-size:15px;color:var(--muted)}
+.steps{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;counter-reset:s;margin:0;padding:0;list-style:none;position:relative}
+.steps::before{content:"";position:absolute;left:0;right:0;top:30px;height:2px;background:var(--line)}
+.steps li{counter-increment:s;position:relative;padding-top:68px}
+.steps li::before{content:counter(s);display:grid;place-content:center;width:44px;height:44px;border-radius:50%;background:var(--red);color:var(--page);font:700 20px/1 var(--body);position:absolute;top:0;left:50%;transform:translateX(-50%);box-shadow:0 3px 0 #8a1f1b}
+.steps h3{margin:0 0 8px;font-size:20px}
+.steps p{margin:0;color:var(--muted);font-size:15px}
+.trust{margin:40px 0 0;padding:20px 24px;background:var(--cream);border:2px solid var(--daff);border-radius:var(--r);font-size:15px;color:var(--muted)}
+.trust strong{color:var(--slate)}
+.closing{background:var(--slate);color:rgba(255,255,255,.9)}
+.closing .sec{display:flex;flex-wrap:wrap;gap:24px 48px;align-items:center;justify-content:space-between;padding-top:64px;padding-bottom:64px}
+.closing h2{color:var(--daff);margin:0 0 12px}.closing p{margin:0;max-width:540px;opacity:.85}
+.closing .btn{background:var(--daff);color:var(--slate);box-shadow:0 4px 0 #b8961f}
+.closing .btn:hover{background:#ffdf5c}
+.checks{display:flex;flex-wrap:wrap;gap:8px 22px;margin:16px 0 0;padding:0;list-style:none;font-size:15px;font-weight:600;color:var(--daff)}
+.checks li::before{content:"\2713";color:var(--daff);margin-right:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px 12px;margin:0 0 28px;padding:0;list-style:none}
+.chips button{min-height:44px;padding:0 22px;border:2px solid var(--line);background:var(--page);color:var(--slate);font:600 15px/1 var(--body);cursor:pointer;border-radius:var(--r);transition:background .15s,border-color .15s}
+.chips button:hover{border-color:var(--red)}
+.chips button[aria-pressed=true]{background:var(--red);border-color:var(--red);color:var(--page)}
+.masthead{border-bottom:2px solid var(--line);background:var(--page)}
+.masthead-in{max-width:var(--wrap);margin:0 auto;padding:36px 28px 32px;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:40px;align-items:center}
+.masthead h1{margin:0 0 16px;font-size:clamp(28px,3.4vw,42px);line-height:1.08;max-width:700px}
+.masthead .meta{margin:0;font-size:14px;color:var(--muted)}
+.masthead .hero-photo{margin:0}.masthead .hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 25%;border:3px solid var(--daff);border-radius:calc(var(--r) + 8px)}
+.masthead .hero-photo figcaption{margin-top:6px;font-size:12px;color:var(--muted);text-align:center;font-style:italic}
+.crumbs{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 16px;font-size:14px;color:var(--muted)}
+.crumbs a{color:var(--muted)}
+.breadcrumb{background:transparent;border:0;padding:0}
+.breadcrumb-inner{max-width:var(--wrap);margin:0 auto;padding:14px 28px;font-size:14px;color:var(--muted);display:flex;flex-wrap:wrap;gap:8px}
+.breadcrumb a{color:var(--muted)}
+.layout{max-width:var(--wrap);margin:0 auto;padding:44px 28px 72px;display:grid;grid-template-columns:minmax(0,1fr) 290px;gap:48px;align-items:start}
+.article{min-width:0;max-width:740px;font-size:18px;line-height:1.75}
+.article a{color:#0066cc}.article a:visited{color:#0052a3}.article a:hover{text-decoration:underline}
+.article h2{font-size:clamp(24px,2.4vw,30px);margin:44px 0 14px;scroll-margin-top:88px;border-bottom:2px solid var(--daff);padding-bottom:4px;color:var(--slate)}
+.article h3{font-size:20px;margin:28px 0 10px;color:var(--slate)}
+.article p{margin:0 0 18px;color:var(--slate)}
+.article ul,.article ol{padding-left:24px}
+.article table{width:100%;border-collapse:collapse;margin:24px 0;font-size:16px;overflow-x:auto;background:var(--page)}
+.article th{text-align:left;color:var(--slate);padding:12px 14px;background:var(--daff);border-bottom:2px solid var(--slate);font-weight:700}
+.article td{padding:12px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+.article details{border-bottom:1px solid var(--line);padding:16px 0;margin:0}
+.article summary{cursor:pointer;font-weight:700;font-size:18px;color:var(--slate);padding:4px 0}
+.article iframe{max-width:100%;border:0;border-radius:var(--r)}
+.article .ai-note{background:var(--cream);border-left:4px solid var(--daff);padding:14px 18px;font-size:15px;color:var(--muted);border-radius:0 var(--r) var(--r) 0}
+.article .callout{border-left:4px solid var(--daff);padding:14px 18px;margin:18px 0;background:var(--cream);border-radius:0 var(--r) var(--r) 0}
+.article .callout p{margin:0;color:var(--muted)}
+.article .tool{border:2px solid var(--daff);border-radius:calc(var(--r) + 4px);padding:24px;margin:24px 0;background:var(--cream)}
+.article .widget{border:2px solid var(--line);border-radius:calc(var(--r) + 4px);padding:24px;margin:24px 0;background:var(--page)}
+.sidebar{position:sticky;top:92px;display:grid;gap:20px;max-height:calc(100vh - 108px);overflow:auto;padding-left:24px;border-left:2px solid var(--daff);font-size:15px}
+.sidebar h3,.sidebar h4{margin:0 0 12px;font:700 12px/1.3 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.sidebar p{margin:0;color:var(--muted)}
+.sidebar ol,.sidebar ul{margin:0;padding:0;list-style:none}
+.sidebar .toc ol{counter-reset:t}
+.sidebar .toc li{counter-increment:t;display:grid;grid-template-columns:26px minmax(0,1fr);gap:4px}
+.sidebar .toc li::before{content:counter(t);color:var(--muted);font:600 14px/1.8 var(--body)}
+.sidebar li a{display:block;padding:5px 0;line-height:1.45;color:var(--slate);text-decoration:none}
+.sidebar li a:hover{color:var(--red)}
+.sidebar .cta-box{border:2px solid var(--red);border-radius:var(--r);padding:18px;margin:0 0 16px;background:var(--cream)}
+.sidebar .cta-box h4{color:var(--red);text-transform:none;letter-spacing:0;font-size:18px;font-family:var(--display)}
+.sidebar .cta-box p{font-size:14px;margin-bottom:14px}
+.sidebar .cta-box .btn{width:100%;justify-content:center;padding:10px 14px}
+.sidebar .sidebar-panel{border-bottom:2px solid var(--daff);padding:16px;margin:0 0 16px}
+.sidebar .sidebar-panel h3{margin:0 0 10px;padding-bottom:6px;color:var(--red)}
+.sidebar .sidebar-panel p{margin:0;font-size:14px;color:var(--muted)}
+.wrap{max-width:var(--wrap);margin:0 auto;padding:40px 28px 72px}
+.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 270px;gap:48px;align-items:start}
+.panel{min-width:0;max-width:740px;background:var(--page);border-radius:calc(var(--r) + 8px);padding:32px;border:2px solid var(--line)}
+.panel h1{font-size:clamp(30px,3.6vw,44px);margin:0 0 18px;font-family:var(--display)}
+.panel h2{font-size:24px;margin:36px 0 12px;border-bottom:2px solid var(--daff);padding-bottom:4px}
+.panel ul{padding-left:20px}
+.panel li{margin-bottom:6px}
+.follow-sidebar-panel{padding-left:24px;border-left:2px solid var(--daff);font-size:15px}
+.follow-sidebar-panel h2{margin:0 0 12px;font:700 12px/1.3 var(--body);letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}.follow-sidebar-panel a{display:block;padding:5px 0;color:var(--slate)}
+[data-follow-sidebar]{position:sticky;top:92px}
+[data-follow-parent]{overflow:visible;align-items:start}
+.hero{background:var(--page);border-bottom:2px solid var(--line);margin:0;padding:0}
+.hero-inner{max-width:var(--wrap);margin:0 auto;padding:36px 28px 32px;display:grid;grid-template-columns:minmax(0,1fr) 220px;gap:40px;align-items:center}
+.hero-inner>*{grid-column:1}
+.hero-inner .hero-photo{grid-column:2;grid-row:1/span 3;margin:0;align-self:center;max-width:220px}
+.hero-inner .hero-photo img{display:block;width:100%;aspect-ratio:4/3;object-fit:cover;object-position:50% 25%;border:3px solid var(--daff);border-radius:calc(var(--r) + 8px)}
+.hero-inner .hero-photo figcaption{font-size:12px;color:var(--muted);text-align:center;font-style:italic;margin-top:6px}
+.hero .eyebrow{margin:0 0 14px;font:700 12px/1.4 var(--body);letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.hero h1{margin:0 0 16px;font-size:clamp(28px,3.4vw,42px);line-height:1.08;max-width:700px;color:var(--slate);font-family:var(--display);font-weight:400}
+.hero p{color:var(--muted);margin:0;max-width:640px}
+@media(max-width:860px){.hero-inner{grid-template-columns:1fr}.hero-inner .hero-photo{display:none}.hero-inner{padding:24px 22px 28px}}
+@media(min-width:1025px) and (max-width:1439px){:root{--wrap:1080px}.hero-home h1{font-size:clamp(36px,4.5vw,56px)}body{font-size:16px}}
+@media(max-width:1024px){.paths{grid-template-columns:1fr 1fr}.nums{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.steps::before{display:none}.steps li{padding-top:0;padding-left:64px}.steps li::before{top:0;left:60px;transform:translateX(0)}.layout{gap:36px;grid-template-columns:minmax(0,1fr) 250px}.cards{grid-template-columns:1fr 1fr}}
+@media(max-width:860px){.hero-home{grid-template-columns:1fr;padding-top:44px;gap:28px}.hero-figure{max-width:280px;grid-row:1}
+.masthead-in{grid-template-columns:1fr}.masthead .hero-photo{display:none}
+.layout,.follow-sidebar-layout{grid-template-columns:1fr}.sidebar,[data-follow-sidebar]{position:static;max-height:none;border-left:0;padding-left:0;margin-top:24px}
+.sec{padding:48px 22px}.closing .sec{flex-direction:column;text-align:center}.cards{grid-template-columns:1fr}}
+@media(max-width:600px){body{font-size:16px}.paths,.nums,.steps{grid-template-columns:1fr}.num{border-bottom:0}
+.card{padding:20px}.sc-topbar-inner,.masthead-in,.layout,.wrap,.sec,.hero-home{padding-left:16px;padding-right:16px}.btn{width:100%;justify-content:center}.hero-home .intro{font-size:17px}}
+@media print{body{background:#fff;color:#000}.sc-topbar,.sc-footer,.sidebar,.follow-sidebar-panel,.skip,.closing,.btn,.arrow,.chips{display:none!important}
+.hero-home{display:block;padding:20px}.layout{display:block;padding:0}.article{max-width:none}.masthead-in{display:block;padding:16px}}
 </style>
-<style id="sc-font">body{font-family:"Book Antiqua", Georgia, serif}body h1,body h2,body h3{font-family:"Book Antiqua", Georgia, serif}</style>
-<style id="site-chrome">
-:where(body){margin:0}.sc-reset,header.sc-topbar,footer.sc-footer{box-sizing:border-box}
-[class*="wrap"],[class*="inner"],[class*="layout"],[class*="container"]{box-sizing:border-box}
-/* ── Top bar ── */
-  .sc-topbar{
-    background: #3f6212;
-    color: #fff;
-    padding: 0 0;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
-  }
-.sc-topbar-inner{
-    max-width: 1120px;
-    margin: 0 auto;
-    padding: 0 20px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 54px;
-  }
-.sc-topbar-brand{
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: #fff;
-    letter-spacing: 0.01em;
-  }
-.sc-topbar-nav{
-    display: flex;
-    gap: 4px;
-    list-style: none;
-  }
-.sc-topbar-nav a{
-    color: rgba(255,255,255,0.88);
-    font-size: 0.88rem;
-    padding: 6px 12px;
-    border-radius: 4px;
-    transition: background 0.15s;
-  }
-.sc-topbar-nav a:hover{
-    background: rgba(255,255,255,0.15);
-    color: #fff;
-    text-decoration: none;
-  }
-@media(max-width:600px) {
-    .sc-topbar-nav { display: none; }}
-/* ── Footer ── */
-  .sc-footer{
-    background: #324e0e;
-    color: rgba(255,255,255,0.75);
-    text-align: center;
-    padding: 24px 16px;
-    font-size: 0.82rem;
-    margin-top: 40px;
-  }
-.sc-footer-nav{ margin-bottom: 8px; }
-.sc-footer-nav a{
-    color: rgba(255,255,255,0.85);
-    margin: 0 10px;
-    font-size: 0.85rem;
-  }
-.sc-topbar a,.sc-footer a{text-decoration:none}
-/* links blue: the most recognisable clickable colour (owner 2026-10-13); not the bar, footer, buttons or cards */
-a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]){color:#0066cc!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):visited{color:#0052a3!important}a:not(.sc-topbar *):not(.sc-footer *):not(header *):not(footer *):not([class*="button"]):not([class*="btn"]):not([class*="-card"]):not([class*="badge"]):not(.sidebar-link):not(.sc-topbar-brand):not([style*="background"]):hover{text-decoration:underline}
-/* site name always readable on the bar, whatever the article CSS does with links (owner 2026-10-13) */
-.sc-topbar .sc-topbar-brand,.sc-topbar .sc-topbar-brand:visited,.sc-topbar .sc-topbar-brand:hover{color:#fff!important}
-@media(max-width:700px){header[class^="sc-"] [class*="inner"],header[class^="sc-"]{flex-wrap:wrap;height:auto}header[class^="sc-"] nav,header[class^="sc-"] [class*="nav"]{display:flex;flex-wrap:wrap;gap:6px 14px}header[class^="sc-"] [class*="inner"]{padding-top:8px;padding-bottom:8px}main,article,aside,[class*="wrap"]>*,[class*="layout"]>*,[class*="content"],[class*="column"]{min-width:0!important;max-width:100%}table{display:block!important;width:auto!important;max-width:100%!important;overflow-x:auto}img,iframe,video{max-width:100%;height:auto}h1,h2,h3,p,li{overflow-wrap:anywhere}[class*="wrap"],[class*="layout"],[class*="rich"],[class*="content"]{grid-template-columns:minmax(0,1fr)!important}article *,[class*="content"] *,[class*="rich"] *{box-sizing:border-box!important;max-width:100%!important;min-width:0!important}table{overflow-x:auto!important}}
-</style>
-<style id="sc-corgi-design">
-:root{--p:#fffaf3;--i:#1f2d4d;--m:#5a6278;--l:#f2e0c8;--d:#2a3d66;--od:#fff6ea;--a:#f08a3c;--ai:#b25418;--card:#ffffff;--bar:#f08a3c;--bart:#1f2d4d;--r:20px;--hf:Verdana,Geneva,sans-serif;--bf:'Trebuchet MS',Arial,sans-serif;--p2:#fde8d6}
-body{background:var(--p)!important;color:var(--i);font-family:var(--bf)!important}html body :is(h1,h2,h3,h4){font-family:var(--hf)!important}
-a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:3px solid var(--ai);outline-offset:3px}
-header.sc-topbar{background:var(--bar)!important;color:var(--bart);box-shadow:none;border-bottom:3px solid var(--a);position:sticky;top:0;z-index:100}
-header.sc-topbar .sc-topbar-inner{max-width:1240px;height:auto;min-height:68px;padding:10px 28px;gap:18px}
-header.sc-topbar a.sc-topbar-brand:is(#_,a),header.sc-topbar a.sc-topbar-brand:is(#_,a):visited{color:var(--bart)!important;font:800 1.4rem/1.1 var(--hf);letter-spacing:-.02em;text-transform:none}
-header.sc-topbar .sc-topbar-nav{gap:2px;margin:0;padding:0;flex-wrap:wrap}
-header.sc-topbar .sc-topbar-nav a{display:block;color:var(--bart);padding:10px 13px;min-height:44px;border-radius:var(--r);font-weight:600;font-size:.86rem}
-header.sc-topbar .sc-topbar-nav a:hover,header.sc-topbar .sc-topbar-nav a[aria-current="page"]{background:var(--bart);color:var(--bar);text-decoration:none}
-.breadcrumb{background:transparent!important;border:0!important}.breadcrumb-inner{max-width:1240px!important;margin:0 auto;padding:14px 28px;font-size:.78rem;color:var(--m)}
-.sd-cover{position:relative;max-width:1184px;margin:6px auto 34px;overflow:hidden;border-radius:var(--r)}
-.sd-cover h1{font-size:clamp(2.4rem,5vw,4.4rem);line-height:1.04;letter-spacing:-.03em;margin:0 0 18px;color:inherit;text-transform:none;text-wrap:balance}
-.sd-cover .intro{font-size:1.06rem;line-height:1.75;margin:0 0 20px;max-width:46ch;color:inherit;opacity:.88}
-.sd-cover .categories{display:flex;flex-wrap:wrap;gap:8px;margin:0}
-.sd-cover .cat-tag{border-radius:var(--r);padding:7px 12px;font-size:.72rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;background:var(--card);color:var(--ai);border:1px solid var(--a)}
-.sd-art{min-height:220px;background:radial-gradient(#f08a3c 26%,transparent 28%) 0 0/30px 30px}
-.page-wrap{max-width:1240px;margin:0 auto;padding:0 28px 56px;display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:32px;align-items:start}
-.main-content{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;align-content:start;background:transparent!important;box-shadow:none!important;padding:0!important;border:0!important}
-.main-content>:not(article){grid-column:1/-1}
-.main-content>article{position:relative;min-width:0;margin:0!important;padding:26px!important;background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none;transition:transform .15s,box-shadow .15s}
-.main-content>article h2{font-size:1.3rem!important;line-height:1.25!important;margin:0 0 12px!important}
-.main-content>article h2 a::after{content:"";position:absolute;inset:0}
-.main-content>article p{color:var(--m)!important;font-size:.92rem!important;line-height:1.7}
-.main-content>article p:first-of-type{color:var(--ai)!important;font-size:.72rem!important;letter-spacing:.08em;text-transform:uppercase;font-weight:700}
-.sidebar :is(.sidebar-about,.sidebar-links,.sidebar-panel){background:var(--card)!important;border:1px solid var(--l)!important;border-radius:var(--r)!important;box-shadow:none!important}
-.sidebar :is(h3,h4){color:var(--ai)!important;font-size:.76rem!important;letter-spacing:.1em;text-transform:uppercase}
-.sidebar-about strong{color:var(--i)}
-.hero{background:#2a3d66!important;color:#fff6ea!important;border-bottom:4px solid var(--a)}
-.hero h1{color:#fff6ea!important;letter-spacing:-.02em;text-transform:none}.hero p{color:#fff6ea!important;opacity:.9}
-.layout{max-width:1240px!important}.hero-inner{max-width:1240px!important;padding-left:22px;padding-right:22px}
-.article,article.article{background:var(--card)!important;border:1px solid var(--l);border-radius:var(--r)!important;box-shadow:none!important}
-.article h2{color:var(--i);border-bottom:2px solid var(--a);padding-bottom:6px}.article h3{color:var(--i)}
-.article th{background:var(--p2)!important;color:var(--i)!important}
-.article blockquote{border-left:4px solid var(--a);background:var(--p2);margin:22px 0;padding:14px 20px}
-.wrap .panel{background:var(--card)!important;border:1px solid var(--l);border-top:5px solid var(--a);border-radius:var(--r)!important;box-shadow:none!important}
-.wrap .panel h1{color:var(--i);text-transform:none}
-footer.sc-footer{background:var(--d)!important;color:var(--od)!important;border-top:6px solid var(--a);padding:34px 20px;margin-top:48px}
-footer.sc-footer a{color:var(--od)!important;display:inline-block;padding:10px 4px}
-
-.sd-cover{display:grid;grid-template-columns:1.1fr 1fr;gap:44px;align-items:center;overflow:visible;padding:26px 0}
-.sd-cover-text{padding:10px 0}.sd-cover h1{color:var(--i)}.sd-cover .intro{color:var(--m);opacity:1}
-.sd-art{min-height:340px;background-color:var(--d);border-radius:calc(var(--r) * 2 + 8px);box-shadow:14px 14px 0 var(--a)}
-.main-content>article:first-of-type{grid-column:1/-1;background:var(--d)!important;border-color:var(--d)!important;padding:34px!important}
-.main-content>article:first-of-type h2{font-size:2rem!important;color:var(--od)!important}
-.main-content>article:first-of-type h2 a:is(#_,a),.main-content>article:first-of-type h2 a:is(#_,a):visited{color:var(--od)!important}
-.main-content>article:first-of-type p{color:var(--od)!important;opacity:.85}
-.main-content>article:hover{transform:translateY(-2px);box-shadow:0 8px 22px rgba(0,0,0,.08)}
-@media(max-width:900px){.page-wrap{grid-template-columns:minmax(0,1fr)!important}.main-content{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media(max-width:760px){header.sc-topbar .sc-topbar-inner{display:block;padding:14px 16px}header.sc-topbar a.sc-topbar-brand:is(#_,a){display:block;margin-bottom:10px}
-header.sc-topbar nav{display:block!important}header.sc-topbar .sc-topbar-nav{display:grid!important;grid-template-columns:repeat(3,minmax(0,1fr));gap:3px}header.sc-topbar .sc-topbar-nav a{padding:11px 2px;text-align:center;font-size:.8rem}
-.breadcrumb-inner{padding:12px 16px}.sd-cover{display:block!important;margin:4px 16px 26px;padding:0}.sd-cover-text,.sd-cover.sd-centered{padding:30px 22px}
-.sd-cover h1{font-size:2.4rem}.sd-art{min-height:90px;margin:0;box-shadow:none}
-.sidebar{display:grid!important;position:static!important;gap:16px;margin-top:24px}aside[class*="sidebar"]:not(.sidebar){display:block!important;position:static!important;margin-top:24px}.page-wrap{padding:0 16px 40px}.main-content{grid-template-columns:minmax(0,1fr)!important}.main-content>article{padding:22px!important}.main-content>article:first-of-type h2{font-size:1.5rem!important}}
-@media(prefers-reduced-motion:reduce){*,*::before,*::after{transition:none!important}}
-</style>
-
-<!-- home-photo-20261025 -->
-<style id="home-photo-20261025">
-/* home-photo-20261025 */
-.home-editorial-photo{margin:1.25rem auto;max-width:1100px;min-width:0}
-.home-editorial-photo img{display:block;width:100%;max-width:100%;height:auto}
-.home-editorial-photo figcaption{font-size:.8rem;line-height:1.5;padding:.5rem .75rem;color:inherit}
-.sd-cover .sd-art.home-editorial-photo{display:block;margin:0;min-height:0;height:auto;opacity:1;background:none;
-border:0;box-shadow:none;transform:none;aspect-ratio:auto}
-.sd-cover .home-editorial-photo img{height:auto;min-height:0;object-fit:contain}
-.home-photo-hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);
-align-items:center;gap:clamp(20px,4vw,60px);padding:clamp(20px,4vw,60px)}
-.home-photo-hero>.hero-inner,.home-photo-hero>.ps-in{margin:0;max-width:none;padding:0;min-width:0}
-.home-photo-hero>.home-editorial-photo{margin:0;width:100%}
-@media(max-width:760px){.home-photo-hero{grid-template-columns:minmax(0,1fr)}
-.sd-cover:has(>.home-editorial-photo){grid-template-columns:minmax(0,1fr)}}
-</style>
-
-<style id="sidebar-follow-20261025">
-[data-follow-sidebar]{display:grid!important;gap:16px;position:sticky!important;top:96px!important;align-self:start!important;
-height:fit-content!important;max-height:calc(100dvh - 112px)!important;overflow-y:auto!important;
-min-width:0;overscroll-behavior:contain;scrollbar-width:thin}
-[data-follow-parent]{overflow:visible!important;align-items:start}
-.follow-sidebar-layout{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:32px;
-width:min(1184px,calc(100% - 32px));margin:32px auto;align-items:start}
-[data-follow-content]{width:auto!important;max-width:100%!important;min-width:0;margin:0!important}
-.follow-sidebar-panel{padding:18px;border:1px solid var(--line,#d8d9d0);border-radius:12px;
-background:var(--soft,#f4f5ef);color:var(--ink,#27382d);margin:0 0 16px}
-.follow-sidebar-panel h2{font:700 .85rem/1.4 system-ui;margin:0 0 12px}
-.follow-sidebar-panel ul{list-style:none;margin:0;padding:0}
-.follow-sidebar-panel a{display:block;padding:8px 0;color:inherit;text-decoration:underline;
-overflow-wrap:anywhere;line-height:1.45}
-@media(max-width:900px){[data-follow-sidebar]{position:static!important;top:auto!important;
-max-height:none!important;height:auto!important;overflow:visible!important;width:100%!important;max-width:100%;float:none!important}
-.follow-sidebar-layout{grid-template-columns:minmax(0,1fr);gap:24px}}
-</style>
-
-<!-- social-cards:start -->
-<meta property="og:title" content="Pembroke Welsh Corgi Guide — Care, Facts &amp; National Day">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://pembroke-welsh-corgi-hub.github.io/">
-<meta property="og:description" content="Your complete resource for Pembroke Welsh Corgi lovers. Breed facts, care tips, national day celebration guide and more.">
-<meta property="og:image" content="https://pembroke-welsh-corgi-hub.github.io/assets/social-share-20261025.jpg">
-<meta property="og:image:secure_url" content="https://pembroke-welsh-corgi-hub.github.io/assets/social-share-20261025.jpg">
-<meta property="og:image:type" content="image/jpeg">
-<meta property="og:image:width" content="1200">
-<meta property="og:image:height" content="800">
-<meta property="og:image:alt" content="red-and-white Pembroke Welsh Corgi trotting on a beach at low tide">
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Pembroke Welsh Corgi Guide — Care, Facts &amp; National Day">
-<meta name="twitter:description" content="Your complete resource for Pembroke Welsh Corgi lovers. Breed facts, care tips, national day celebration guide and more.">
-<meta name="twitter:image" content="https://pembroke-welsh-corgi-hub.github.io/assets/social-share-20261025.jpg">
-<meta name="twitter:image:alt" content="red-and-white Pembroke Welsh Corgi trotting on a beach at low tide">
-<!-- social-cards:end -->
 </head>
 <body>
+<a class="skip" href="#content">Skip to content</a>
 <header class="sc-topbar">
   <div class="sc-topbar-inner">
-    <a class="sc-topbar-brand" href="/">Pembroke Welsh Corgi Guide</a>
-    <nav>
-      <ul class="sc-topbar-nav">
-        <li><a href="/" aria-current="page">Home</a></li>
-        <li><a href="/blog.html">Blog</a></li>
-        <li><a href="/care.html">Care</a></li>
-        <li><a href="/about.html">About</a></li>
-        <li><a href="/contact.html">Contact</a></li>
-        <li><a href="/sitemap.html">Sitemap</a></li>
-      </ul>
-    </nav>
+    <a class="sc-topbar-brand" href="/">Corgi Hub <small>&#9829; corgi people</small></a>
+    <nav aria-label="Main"><ul class="sc-topbar-nav"><li><a href="/blog.html">All guides</a></li><li><a href="/blog.html#care">Care</a></li><li><a href="/blog.html#behavior">Behavior</a></li><li><a href="/blog.html#guide">Breed Guides</a></li><li class="cta"><a href="/corgi-pedigree-tree.html">Pedigree Tree</a></li></ul></nav>
+    <details class="pwch-menu"><summary>&#x2630;</summary><nav class="pwch-panel" aria-label="Mobile"><a href="/blog.html">All guides</a><a href="/blog.html#care">Care</a><a href="/blog.html#behavior">Behavior</a><a href="/blog.html#guide">Breed Guides</a><div class="minor"><a href="/about.html">About</a><a href="/contact.html">Contact</a><a href="/editorial-policy.html">Editorial policy</a><a href="/sitemap.html">Sitemap</a></div></nav></details>
   </div>
 </header>
 
-
-<!-- TOP BAR -->
-
-
-
-
-<!-- BREADCRUMB -->
-<div class="breadcrumb">
-  <div class="breadcrumb-inner">
-    <a href="/">Home</a><span>›</span> Pembroke Welsh Corgi Guide
-  </div>
-</div>
-
-<!-- PAGE LAYOUT -->
-<section class="sd-cover sd-split">
-  <div class="sd-cover-text">
-    <h1>Everything About Pembroke Welsh Corgis</h1>
-    <p class="intro">Your complete resource for Pembroke Welsh Corgi lovers — breed facts, health tips, training advice, and national day ideas.</p>
-    <div class="categories">
-      <span class="cat-tag">Care Tips</span>
-      <span class="cat-tag">Breed Facts</span>
-      <span class="cat-tag">Health</span>
-      <span class="cat-tag">Training</span>
+<section class="hero-home">
+  <div>
+    <p class="label">A guide for corgi people</p>
+    <h1><span class="red">Corgi</span> <span class="gold">Hub</span><br><em>Pembroke Welsh Corgi Guide</em></h1>
+    <p class="intro">Evidence-based guides on corgi grooming, behavior, weight, ears and everyday care — from what owners actually report and breed sources say.</p>
+    <div class="hero-actions">
+      <a class="btn" href="/blog.html">Browse all guides &rarr;</a>
+      <a class="arrow" href="/corgi-pedigree-tree.html">Build a pedigree tree &rarr;</a>
     </div>
   </div>
-  <figure class="sd-art home-editorial-photo" data-home-photo="20261025"><img src="/assets/home-editorial-20261025.webp" alt="red-and-white Pembroke Welsh Corgi trotting on a beach at low tide" width="1536" height="1024" fetchpriority="high" decoding="async" data-ai-generated="true"><figcaption>AI-generated illustration.</figcaption></figure>
+  <figure class="hero-figure">
+    <img src="/assets/breed-editorial-v1.webp" alt="Red-and-white Pembroke Welsh Corgi trotting on a coastal path - AI-generated illustration" width="1200" height="900" decoding="async">
+    <figcaption>AI-generated illustration.</figcaption>
+  </figure>
 </section>
-<div class="page-wrap" data-follow-parent="true">
 
-  <!-- MAIN CONTENT -->
-  <main class="main-content">
-
-    
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/getting-second-corgi.html" style="color:#324e0e; text-decoration:none;">Getting a Second Corgi: Prep, Picking &amp; Sharing Attention</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-11-02</p>
-            <p style='color:#555; margin:8px 0 0;'>Getting a second corgi without guilt: prep your home, pick the right match by sex and age, introduce them safely and split attention with a daily plan.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/corgi-blowing-coat-timeline.html" style="color:#324e0e; text-decoration:none;">Corgi Blowing Coat Timeline: Week-by-Week Undercoat Guide</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-30</p>
-            <p style='color:#555; margin:8px 0 0;'>Corgi blowing coat timeline: the four stages of a Pembroke coat blow, a dated planner for your dog, and a 15-minute daily routine to keep up with the undercoat.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/corgi-adult-weight.html" style="color:#324e0e; text-decoration:none;">Adult Corgi Weight: Owner Reports vs. Breed Standard</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-22</p>
-            <p style='color:#555; margin:8px 0 0;'>Adult corgi weight compared with the breed standard: explore seven owner reports by sex and age, see frame notes, and understand what the numbers actually show.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/corgi-hates-being-brushed.html" style="color:#324e0e; text-decoration:none;">Corgi Hates Being Brushed? A Gentle Deshedding Plan</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-22</p>
-            <p style='color:#555; margin:8px 0 0;'>Corgi hates being brushed? Use a step-by-step tolerance plan, a brushing planner, and a comparison of the gentler deshedding tools corgi owners switched to.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/corgi-car-booster-seat-size-guide.html" style="color:#324e0e; text-decoration:none;">Corgi Car Booster Seat Guide: Sizing for a 25-30 lb Dog</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-10-14</p>
-            <p style='color:#555; margin:8px 0 0;'>Corgi car booster seat sizing: measure your 25-30 lb Pembroke curled and stretched, compare inside floor sizes, and check the fit with our free tool.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/corgi-biting-phase-how-long.html" style="color:#324e0e; text-decoration:none;">How Long Does the Corgi Biting Phase Last? Timeline and Solutions</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-06-17</p>
-            <p style='color:#555; margin:8px 0 0;'>Discover the corgi biting phase timeline, why puppies bite, and proven training methods to stop destructive chewing and mouthing behavior safely.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/corgi-picky-eater-wont-eat.html" style="color:#324e0e; text-decoration:none;">Corgi Picky Eater: When Fussiness Is Real and What to Do</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-31</p>
-            <p style='color:#555; margin:8px 0 0;'>Is your corgi picky eater for real or just not hungry? Learn when to suspect a medical cause, how the 15-minute rule works, and when fussiness becomes a red flag.</p>
-        </article>
-        
-        
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/international-corgi-day-2026.html" style="color:#324e0e; text-decoration:none;">International Corgi Day 2026: Dates, Events & Celebration Ideas</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-26</p>
-            <p style='color:#555; margin:8px 0 0;'>International Corgi Day falls on June 4, 2026. Discover events worldwide, celebration ideas at home, and what Corgi owners actually do for the occasion.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/can-corgis-go-up-and-down-stairs.html" style="color:#324e0e; text-decoration:none;">Can Corgis Go Up and Down Stairs? Safety Rules</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
-            <p style='color:#555; margin:8px 0 0;'>Find out when Pembroke Welsh Corgis can use stairs, when a ramp is safer, and which warning signs mean you should stop and call your vet.</p>
-        </article>
-        <article style="background:#f9f9f9; border-left:4px solid #3f6212; padding:20px; margin-bottom:24px; border-radius:4px;">
-            <h2 style="margin-top:0; font-size:1.2rem;">
-                <a href="/when-do-corgi-ears-stand-up.html" style="color:#324e0e; text-decoration:none;">When Do Corgi Ears Stand Up? Timeline and Tips</a>
-            </h2>
-            <p style='color:#888; font-size:0.85rem; margin:4px 0;'>2026-05-19</p>
-            <p style='color:#555; margin:8px 0 0;'>When Do Corgi Ears Stand Up? Timeline and Tips</p>
-        </article>
-    
-  </main>
-
-  <!-- SIDEBAR -->
-  <aside class="sidebar" data-follow-sidebar="existing">
-    
-    
-
-    <div class="sidebar-about">
-      <strong>About Pembroke Welsh Corgi Guide</strong>
-      Dedicated to Pembroke Welsh Corgi owners and enthusiasts. In-depth guides, care tips, and national dog day coverage.
-    </div>
-
-    <div class="sidebar-links">
-      <h4>Quick Links</h4>
+<section class="sec band">
+  <p class="label">01 / Topics</p>
+  <h2>Choose your topic</h2>
+  <p class="sec-lead">Three sections cover everything from grooming schedules to ear timelines. Each guide includes a working tool you can use on your own corgi.</p>
+  <div class="paths">
+    <div class="path">
+      <div class="pwch-icon">&#x1F9F4;</div>
+      <h3>Care</h3>
+      <p>Grooming, shedding, coat blows and everyday corgi maintenance.</p>
       <ul>
-        <li><a href="/blog.html">Latest Articles</a></li>
-        <li><a href="/care.html">Pembroke Welsh Corgi Care Guide</a></li>
-        <li><a href="/about.html">About Us</a></li>
-        <li><a href="/privacy.html">Privacy</a></li>
-        <li><a href="/sitemap.html">Sitemap</a></li>
+        <li><a href="/corgi-blowing-coat-timeline.html">Corgi Blowing Coat Timeline: Week-by-Week Undercoat Guide</a></li>
+        <li><a href="/corgi-car-booster-seat-size-guide.html">Corgi Car Booster Seat Guide: Sizing for a 25-30 lb Dog</a></li>
+        <li><a href="/corgi-hates-being-brushed.html">Corgi Hates Being Brushed? A Gentle Deshedding Plan</a></li>
       </ul>
-      <h4>Latest articles</h4><ul><li><a href="/getting-second-corgi.html">Getting a Second Corgi: Prep, Picking &amp; Sharing Attention</a></li><li><a href="/corgi-blowing-coat-timeline.html">Corgi Blowing Coat Timeline: Week-by-Week Undercoat Guide</a></li><li><a href="/corgi-adult-weight.html">Adult Corgi Weight: Owner Reports vs. Breed Standard</a></li><li><a href="/corgi-hates-being-brushed.html">Corgi Hates Being Brushed? A Gentle Deshedding Plan</a></li><li><a href="/corgi-car-booster-seat-size-guide.html">Corgi Car Booster Seat Guide: Sizing for a 25-30 lb Dog</a></li><li><a href="/corgi-biting-phase-how-long.html">How Long Does the Corgi Biting Phase Last? Timeline and Solutions</a></li></ul>
+      <a class="arrow" href="/blog.html#care">All care guides &rarr;</a>
     </div>
-  </aside>
-
-</div>
-
-<!-- FULL-WIDTH EMAIL BLOCK (wszystkie blogi) -->
-
-
-<!-- FOOTER -->
-
-
-
-
-<script>
-  function handleSidebarSubmit(e) {
-    e.preventDefault();
-    var btn = e.target.querySelector('button');
-    btn.textContent = 'Thanks! ✓';
-    return false;
-  }
-  function handleBannerSubmit() {
-    var em = document.getElementById('banner-email');
-    if (!em || !em.value.includes('@')) return;
-    em.value = '';
-    em.placeholder = 'Thanks! ✓';
-    em.disabled = true;
-  }
-  function handleBottomSubmit() {
-    var em = document.getElementById('bottom-email');
-    if (!em || !em.value.includes('@')) return;
-    em.value = '';
-    em.placeholder = 'Thanks! ✓';
-    em.disabled = true;
-  }
-  function handleEmbedSubmit(e) {
-    e.preventDefault();
-    var btn = e.target.querySelector('button');
-    btn.textContent = 'Thanks! ✓';
-    return false;
-  }
-</script>
-<footer class="sc-footer">
-  <div class="sc-footer-nav">
-    <a href="/">Home</a>
-    <a href="/blog.html">Blog</a>
-    <a href="/about.html">About</a>
-    <a href="/contact.html">Contact</a>
-    <a href="/privacy.html">Privacy</a>
-    <a href="/sitemap.html">Sitemap</a>
+    <div class="path">
+      <div class="pwch-icon">&#x1F43E;</div>
+      <h3>Behavior</h3>
+      <p>Biting, picky eating, second-corgi dynamics and the clever corgi mind.</p>
+      <ul>
+        <li><a href="/corgi-biting-phase-how-long.html">Corgi Biting Phase: Timeline and Training Wins</a></li>
+        <li><a href="/corgi-picky-eater-wont-eat.html">Corgi Picky Eater: When Fussiness Is Real and What to Do</a></li>
+        <li><a href="/getting-second-corgi.html">Getting a Second Corgi: Prep, Picking & Sharing Attention</a></li>
+      </ul>
+      <a class="arrow" href="/blog.html#behavior">All behavior guides &rarr;</a>
+    </div>
+    <div class="path">
+      <div class="pwch-icon">&#x1F4D6;</div>
+      <h3>Breed Guides</h3>
+      <p>Adult weight, ear timelines, national corgi day and breed knowledge.</p>
+      <ul>
+        <li><a href="/corgi-adult-weight.html">Adult Corgi Weight: Owner Reports vs. Breed Standard</a></li>
+        <li><a href="/international-corgi-day-2026.html">International Corgi Day 2026: Dates, Events & Celebration Ideas</a></li>
+        <li><a href="/when-do-corgi-ears-stand-up.html">When Do Corgi Ears Stand Up? | Week-by-Week Timeline & Normal Range | Corgi Hub</a></li>
+      </ul>
+      <a class="arrow" href="/blog.html#guide">All breed guides &rarr;</a>
+    </div>
   </div>
-  <p>&copy; 2026 pembroke-welsh-corgi-hub.github.io &mdash; Pembroke Welsh Corgi Guide. All rights reserved.</p>
-</footer>
+</section>
+
+<section class="sec">
+  <p class="label">02 / Latest guides</p>
+  <h2>Recent articles</h2>
+  <p class="sec-lead">Newest articles first. Every guide includes a working tool you can try on your own corgi.</p>
+  <div class="cards">
+    <article class="card"><p class="kicker">Corgi Mobility Guide</p><h2><a href="/can-corgis-go-up-and-down-stairs.html">Keep Your Corgi Safe on Stairs: The Complete Guide</a></h2><p>Protect your corgi from stair injuries with proven safety rules. Learn which stairs work, what to avoid, and how to help your dog navigate confidently.</p></article>
+    <article class="card"><p class="kicker">Corgi Hub</p><h2><a href="/care.html">Pembroke Welsh Corgi Care Guides | Pembroke Welsh Corgi Guide</a></h2><p>Keeping a corgi lean protects its back. These guides cover weight, feeding and everyday care.</p></article>
+    <article class="card"><p class="kicker">Corgi Size and Everyday Care</p><h2><a href="/corgi-adult-weight.html">Adult Corgi Weight: Owner Reports vs. Breed Standard</a></h2><p>Adult corgi weight compared with the breed standard: explore seven owner reports by sex and age, see frame notes, and understand what the numbers actually show.</p></article>
+    <article class="card"><p class="kicker">Corgi Puppy Behavior</p><h2><a href="/corgi-biting-phase-how-long.html">Corgi Biting Phase: Timeline and Training Wins</a></h2><p>Corgi biting phase explained: separate teething from play biting, build calmer habits with a practical plan, and learn when your puppy needs professional help.</p></article>
+    <article class="card"><p class="kicker">Corgi Grooming and Everyday Care</p><h2><a href="/corgi-blowing-coat-timeline.html">Corgi Blowing Coat Timeline: Week-by-Week Undercoat Guide</a></h2><p>Corgi blowing coat timeline: the four stages of a Pembroke coat blow, a dated planner for your dog, and a 15-minute daily routine to keep up with the undercoat.</p></article>
+    <article class="card"><p class="kicker">Corgi Gear & Travel</p><h2><a href="/corgi-car-booster-seat-size-guide.html">Corgi Car Booster Seat Guide: Sizing for a 25-30 lb Dog</a></h2><p>Corgi car booster seat sizing: measure your 25-30 lb Pembroke curled and stretched, compare inside floor sizes, and check the fit with our free tool.</p></article>
+  </div>
+  <div style="margin-top:28px;text-align:center"><a class="btn" href="/blog.html">View all guides &rarr;</a></div>
+</section>
+
+<section class="sec band">
+  <p class="label">03 / By the numbers</p>
+  <h2>Corgi Hub in figures</h2>
+  <div class="nums">
+    <div class="num"><b>9<small>published guides</small></b><p>covering corgi care, behaviour and breed knowledge — with working tools on every page</p><a href="/corgi-blowing-coat-timeline.html">Source &rarr;</a></div>
+    <div class="num"><b>3<small>topic paths</small></b><p>through the site — Care, Behavior, Breed Guides</p><a href="/corgi-adult-weight.html">Source &rarr;</a></div>
+    <div class="num"><b>4<small>generations</small></b><p>on the pedigree tree — add your corgi's ancestors and print a beautiful family chart</p><a href="/corgi-pedigree-tree.html">Source &rarr;</a></div>
+    <div class="num"><b>0<small>sign-ups</small></b><p>no email list, no account — ever.</p><a href="/corgi-hates-being-brushed.html">Source &rarr;</a></div>
+  </div>
+</section>
+
+<section class="sec">
+  <p class="label">04 / How it works</p>
+  <h2>How we build each guide</h2>
+  <ol class="steps">
+    <li><h3>Pick a guide</h3><p>We find the real questions Pembroke Welsh Corgi owners ask in forums, groups and comments.</p></li>
+    <li><h3>Check the facts</h3><p>Every figure and source links to the origin so you can verify it yourself.</p></li>
+    <li><h3>Build a tool</h3><p>Each guide includes a small working tool — a planner, a checker, a calculator or a pedigree tree.</p></li>
+    <li><h3>Publish and review</h3><p>Written with AI help, checked by a person before it goes live. No exceptions.</p></li>
+  </ol>
+  <div class="trust"><strong>Evidence-based approach.</strong> Every claim in our guides links to its source — an AKC breed profile, a grooming guide, a published study or a real owner thread. When data is thin, we say so. <strong>Cymru am byth.</strong></div>
+</section>
+
+<section class="closing">
+  <div class="sec">
+    <div>
+      <h2>Ready to trace your corgi&rsquo;s roots?</h2>
+      <p>Browse all guides or build a printable pedigree tree — no account, no email, just the tools you need for your corgi.</p>
+    </div>
+    <div>
+      <a class="btn" href="/{FEATURE}">Build pedigree tree &rarr;</a>
+      <ul class="checks">
+        <li>Evidence-based approach</li>
+        <li>Working tools on every page</li>
+        <li>No email list, ever</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+{FOOTER}
 </body>
 </html>
